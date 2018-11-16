@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="main-post-list">
+  <h2>My projects</h2>
+  <p class="my-projects">
+    {% for project in site.data.myprojects %}
+      {{ project | jsonify }}
+    {% endfor %}
+    {% for page in site.pages %}
+      <li>
+        <h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ page.url }}" title="{{ page.title }}">{{ page.title }} {{ site.baseurl }}{{ page.url }}</a></h2>
+        <p class="excerpt">{{ post.excerpt | strip_html }}&hellip;</p>
+        <div class="post-list__meta">
+            <time datetime="{{ page.date | date: "%Y-%m-%d %H:%M" }}" class="post-list__meta--date date">{{ page.date | date: "%-d %b %Y" }}</time>
+        </div>
+        <hr class="post-list__divider">
+      </li>
+    {% endfor %}
+  </p>
+  <hr class="post-list__divider ">
+</div>
