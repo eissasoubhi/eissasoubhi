@@ -1,23 +1,36 @@
 ---
 layout: default
+title: My projects
 ---
 
-<div class="main-post-list">
+<div class="main-projects-list">
   <h2>My projects</h2>
-  <p class="my-projects">
-    {% for project in site.data.myprojects %}
-      {{ project | jsonify }}
-    {% endfor %}
-    {% for page in site.pages %}
-      <li>
-        <h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ page.url }}" title="{{ page.title }}">{{ page.title }} {{ site.baseurl }}{{ page.url }}</a></h2>
-        <p class="excerpt">{{ post.excerpt | strip_html }}&hellip;</p>
-        <div class="post-list__meta">
-            <time datetime="{{ page.date | date: "%Y-%m-%d %H:%M" }}" class="post-list__meta--date date">{{ page.date | date: "%-d %b %Y" }}</time>
-        </div>
-        <hr class="post-list__divider">
-      </li>
-    {% endfor %}
+  <p class="prj-into">
+    Programming skills are like muscles, if we stop training them. soon, they will be weak/forgotten, in this case side projects are the best chance to keep up with the new technologies and improve my programming skills, and if possible, also contribute to the opensouce community.<br>
+    Here are some of my projects below.
   </p>
   <hr class="post-list__divider ">
+  <div class="my-projects">
+    {% for project in site.data.myprojects %}
+      <div class="project">
+        <div class="prj-details">
+          <p>
+            <a href="{{ project.url }}" title="{{ project.url }}" target="_blank">
+              <h4>
+                <i class="icon icon-link"></i> {{ project.name }}
+              </h4>
+            </a>
+          </p>
+          <p>
+            {{ project.description }}
+          </p>
+        </div>
+        <div class="prj-screenshot">
+          <a href="{{ project.url }}" title="{{ project.url }}">
+            <img src="{{ site.baseurl }}/images/myprojects/{{ project.image }}" alt="">
+          </a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 </div>

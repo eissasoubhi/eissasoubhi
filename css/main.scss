@@ -57,3 +57,43 @@ pre.highlight code,
   border: 3px solid #fff;
   border-radius:100%;
 }
+
+.main-projects-list .prj-into {
+  margin-bottom: 50px;
+}
+
+.my-projects .project {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.project .prj-screenshot {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.project .prj-screenshot,
+.project .prj-details {
+  width: 50%;
+}
+
+.prj-screenshot img {
+  max-width: 100%;
+  margin-left: 15px;
+  border: 1px solid #f9d3cd;
+  box-sizing: border-box;
+}
+
+.prj-screenshot a {
+  display: block;
+}
+
+.project .prj-screenshot {
+  padding-left: 15px;
+}
+
+.project .prj-details {
+  padding-right: 15px;
+}

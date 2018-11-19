@@ -1,10 +1,26 @@
 ---
 - name: Etaku.ma
-  image: ssss
-  url: uuuuuu
-  description: dddddd
+  image: etaku.jpg
+  url: http://etaku.eissa-soubhi.com
+  description: An e-commerce website for selling customizable T-shirts (using Laravel).
 
-- name: Etaku.ma
-  image: ssss
-  url: uuuuuu
-  description: dddddd
+- name: Newfilms.top
+  image: newfilms.jpg
+  url: http://newfilms.eissa-soubhi.com
+  description: A website to watch latest Movies & TV Shows Online (using Laravel).
+
+- name: Exprime.eissa-soubhi.com
+  image: exprime.jpg
+  url: http://exprime.eissa-soubhi.com/
+  description: A memes generator website (using Laravel).
+
+- name: FleX-debug
+  image: flexdebug.jpg
+  url: https://github.com/eissasoubhi/fleX-debug
+  description: A google chrome extension for php Xdebug extension to navigate the printed data like tree nodes instead of scrolling up-down (using Javascript & JQuery).
+
+- name: Summernote bricks
+  image: summernote-bricks.jpg
+  url: https://github.com/eissasoubhi/summernote-bricks
+  description: A Summernote module to add user-friendly components to the WYSIWYG editor
+
