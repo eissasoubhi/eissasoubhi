@@ -2,7 +2,7 @@
 title: Eissa Soubhi
 description: 'Full-Stack Web Developer From Kingdom of Morocco'
 url: 'https://eissasoubhi.github.io'
-baseurl: 'eissasoubhi'
+baseurl: '/eissasoubhi/'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
