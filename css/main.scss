@@ -5,6 +5,13 @@
 @import "monokai";
 
 /* Modifications */
+body{
+  overflow-y: hidden;
+}
+
+body.cover-collapsed{
+  overflow-y: auto;
+}
 
 pre.highlight,
 .highlight pre {
@@ -96,4 +103,11 @@ pre.highlight code,
 
 .project .prj-details {
   padding-right: 15px;
+}
+
+.panel-cover{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    background-size: cover;
+    background-position: center;
 }

@@ -5,14 +5,24 @@ layout: default
 <div class="main-post-list">
   <h2>About me</h2>
   <p class="about">
-    I'm a {{ 'now' | date: "%Y" | minus:1991 }} years old full-stack web developer with {{ 'now' | date: "%Y" | minus:2013 }} years of experience from Casablanca, kingdom of Morocco.<br>
-    On my projects, I've worked with many programming languages for the backend like ASP.NET, JEE and PHP but I chose to stick with <a href="http://www.php.net/" title="PHP">PHP</a> because I liked how it allows me to know and control what happens under the hood, but that comes with some security and performance costs so working with a Framework is a must.<br>
-    Unlike choosing a backend language, when I first worked with <a href="https://laravel.com/" title="Laravel">Laravel</a> I just fell in love with it without even trying other frameworks first.<br>
-    If I were writing this in 2010 or earlier, The word "Frontend developer" wouldn't need any explanation because it would only mean HTML/CSS and Javascript but now, there is plenty of choices out there. <br>
-    I've worked with <a href="https://vuejs.org/" title="Vue.js">Vue.js</a>, <a href="https://angular.io/" title="Angular">Angular</a> and <a href="https://reactjs.org/" title="">React</a> each one of those Frameworks has its pros and cons but I liked them all and I dont mind to work with anyone of them.<br>
-    Let's not forget about CSS, there is so much to tell about this language but let me conclud it by saying I mostly work with Sass and the widly popular CSS framework <a href="https://getbootstrap.com/" title="Bootstrap">Bootstrap</a>.<br><br>
+    I'm a {{ 'now' | date: "%Y" | minus:1991 }} years old full-stack web developer with <i>{{ 'now' | date: "%Y" | minus:2013 }} years of experience</i> from Casablanca, kingdom of Morocco.
+  </p>
 
-    Now let's talk about IDEs and Text editors, most PHP developers say <a href="https://www.jetbrains.com/phpstorm/" title="PhpStome">PhpStome</a>  is the best IDE for PHP and it has a lot of features, I've tried it but I prefer to keep things lightweight and simple, I think you know what I'm talking about... yes exactly it's <a href="https://www.sublimetext.com/" title="Sublime Text">Sublime Text</a>... Sublime Text is and always will be my prefered code editor, I dont undersand why dont they just make it the default text editor in all OSes, you ask me why? here is my answer on Quora <a href="https://www.quora.com/Which-IDE-or-text-editor-are-you-using-right-now-Why/answer/Eissa-Soubhi" title="Which IDE or text editor are you using right now, Why">https://www.quora.com/Which-IDE-or-text-editor-are-you-using-right-now-Why/answer/Eissa-Soubhi</a>
+  <h4><strong>The Backend</strong></h4>
+  <p>
+    On my projects, I've worked with many programming languages for the backend like ASP.NET, JEE and PHP but I chose to stick with <a href="http://www.php.net/" title="PHP">PHP</a> because I liked how it allows me to know and control what happens under the hood, but that comes with some security and performance costs so working with a Framework is a must.<br>
+    Unlike choosing a backend language, when <i>I first worked with <a href="https://laravel.com/" title="Laravel">Laravel</a> {{ 'now' | date: "%Y" | minus:2014 }} years ago</i>, I just fell in love with it instantly.
+  </p>
+
+  <h4><strong>The Frontend</strong></h4>
+  <p>
+    I've worked with <a href="https://vuejs.org/" title="Vue.js">Vue.js</a>, <a href="https://angular.io/" title="Angular">Angular</a> and <a href="https://reactjs.org/" title="">React</a> each one of those Frameworks has its pros and cons but I liked them all and I dont mind to work with anyone of them.<br>
+    Let's not forget about CSS, there is so much to tell about this language but let me conclud it by saying I mostly work with Sass and the widly popular CSS framework <a href="https://getbootstrap.com/" title="Bootstrap">Bootstrap</a>.
+  </p>
+
+  <h4><strong>IDEs and Text editors</strong></h4>
+  <p>
+    Now let's talk about IDEs and Text editors, most PHP developers say PhpStome is the best IDE for PHP and it has a lot of features, I've tried it but I prefer to keep things lightweight and simple, I think you know what I'm talking about... yes exactly it's <a href="https://www.sublimetext.com/" title="Sublime Text">Sublime Text</a>... Sublime Text is and always will be my prefered code editor, I dont undersand why dont they just make it the default text editor in all OSes, you ask me why? here is my answer on Quora <a href="https://www.quora.com/Which-IDE-or-text-editor-are-you-using-right-now-Why/answer/Eissa-Soubhi" title="Which IDE or text editor are you using right now, Why">https://www.quora.com/Which-IDE-or-text-editor-are-you-using-right-now-Why/answer/Eissa-Soubhi</a>
   </p>
   <p class="my-projects">
     {% for page in site.pages %}
