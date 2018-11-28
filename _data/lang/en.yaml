@@ -1,0 +1,88 @@
+cv:
+  lang_buttons:
+    en: Cv in Englais
+    fr: Cv in French
+  profile_title: Profile
+  bio: >
+      I'm a $age years old full-stack web developer with $experience years of experience from Casablanca, the kingdom of Morocco.<br> I am passionate about web programming, I like learning new programming skills and coding techniques to build fancy websites and powerful applications.<br>
+  experience:
+    name: Experience
+    list:
+      - date: 2018 Now
+        title: Full Stack Developer
+        subtitle: Auto-entrepreneur
+        description: >
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cupiditate labore aliquid, id sed possimus culpa, velit expedita non quasi!
+
+      - date: 2015 2017
+        title: IT Manager
+        subtitle: Tailor Corner
+        link: https://www.tailorcorner.fr/
+        link_title: Tailor Corner website"
+        description: >
+          Creating and maintaining the company's websites and applications.<br>
+          Technologies usually used:<br>
+          Laravel 4.2 and 5.2, Bootstrap, Javascript/JQuery, GIT, npm...
+
+      - date: 2013 2015
+        title: Web Developer
+        subtitle: Sypro technologies
+        link: https://www.sypro.fr/
+        link_title: Sypro technologies website"
+        description: >
+          Creating websites with native PHP, Laravel 4.2, HTML/CSS3, Bootstrap and Javascript/JQuery.
+  education:
+    name: Education
+    list:
+    - date: 2015 2017
+      title: Master in Design Engineering and Application Development
+      subtitle: FST University
+
+    - date: 2014 2015
+      title: Bachelor's degree in MIAGE (Business Informatics)
+      subtitle: FST University
+
+    - date: 2011 2013
+      title: Diploma Of Vocational Training
+      subtitle: FST University
+  skills:
+    name: Skills
+    list:
+    - title: PHP
+      icon: <i class="fab fa-php"></i>
+      progress: 90%
+      description: >
+        Building web applications and REST APIs using Laravel framework.
+
+    - title: Javascript
+      icon: <i class="fab fa-js"></i>
+      progress: 80%
+      description: >
+        Building interactive web applications with JQuery and AngularJs.<br />
+        Creating plugins and Google Chrome Extensions.
+
+    - title: CSS/HTML
+      icon: <i class="fab fa-css3-alt"></i>
+      progress: 90%
+      description: >
+        Transform a design into a stable CSS/HTML project using Bootstrap ready for development, familiar with search engine optimization (SEO).
+
+    - title: Design
+      icon: <i class="fas fa-crop"></i>
+      progress: 40%
+      description: >
+        Familiar with Adobe tools (Photoshop, Illustrator).
+  network:
+    name: Network
+    find_me_on: 'On'
+    list:
+    - title: Github
+      link: https://github.com
+      name: github
+      icon: <i class="fab fa-github"></i>
+
+    - title: LinkedIn
+      link: https://linkedin.com
+      path: /in
+      name: linkedin
+      icon: <i class="fab fa-linkedin"></i>
