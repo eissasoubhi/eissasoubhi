@@ -1,91 +1,51 @@
 {%- include trans.html -%}
 {% if page.identifier == "cv-printable" %}
-  <h3 class="cv-left-side-title ">Info</h3>
+  <h3 class="cv-left-side-title ">{{ _trans.cv.left_side.info.title }}</h3>
 {% endif %}
 <div class="cv-left-side">
+  {% for info in _trans.cv.left_side.info.list %}
+    {% unless info.hide_in_printable_cv == true and page.identifier != "cv-printable" %}
       <div class="cv-left-side-field row">
         <div class="icon-field col-1">
-          <i class="fas fa-flag"></i>
+          {{ info.icon }}
         </div>
         <div class="text-field col">
-          <div class="title-field">Nationality </div>
-          <p class="value-field">Moroccan </p>
+          <div class="title-field">{{ info.title }}</div>
+          <p class="value-field">{{ info.value }}</p>
         </div>
       </div>
-
-      <div class="cv-left-side-field row">
-        <div class="icon-field col-1">
-          <i class="fas fa-address-card"></i>
-        </div>
-        <div class="text-field col">
-          <div class="title-field">Address </div>
-          <p class="value-field">NR 43 impasse Aouja AM Casablanca Maroc </p>
-        </div>
-      </div>
-
-      <div class="cv-left-side-field row">
-        <div class="icon-field col-1">
-          <i class="fas fa-phone"></i>
-        </div>
-        <div class="text-field col">
-          <div class="title-field">Phone </div>
-          <p class="value-field">+212 663 317 740</p>
-        </div>
-      </div>
-
-      <div class="cv-left-side-field row">
-        <div class="icon-field col-1">
-          <i class="fas fa-envelope"></i>
-        </div>
-        <div class="text-field col">
-          <div class="title-field">Email </div>
-          <p class="value-field">eissa.soubhi@gmail.com </p>
-        </div>
-      </div>
-
-      <div class="cv-left-side-field row">
-        <div class="icon-field col-1">
-          <i class="fas fa-globe-africa"></i>
-        </div>
-        <div class="text-field col">
-          <div class="title-field">Languages </div>
-          <p class="value-field">Arabic, English, French </p>
-        </div>
-      </div>
-
-      {% if page.identifier == "cv-printable" %}
-      <div class="cv-left-side-field row">
-        <div class="icon-field col-1">
-          <i class="fas fa-mouse-pointer"></i>
-        </div>
-        <div class="text-field col">
-          <div class="title-field">Website </div>
-          <p class="value-field"><a href="http://eissa-soubhi.com" title="Vsite eissa-soubhi.com" target="_blank">eissa-soubhi.com</a> </p>
-        </div>
-      </div>
-      {% endif %}
+    {% endunless %}
+  {% endfor %}
 </div>
 
 {% if page.identifier == "cv-printable" %}
-<h3 class="cv-left-side-title ">Skills</h3>
+<h3 class="cv-left-side-title ">{{ _trans.cv.skills.name }}</h3>
 <div class="cv-left-side skills">
   {% for skill in _trans.cv.skills.list %}
-    <div class="cv-left-side-field row">
-      <div class="icon-field col-1">{{ skill.icon }}</div>
-      <div class="text-field col">
-        <div class="title-field">{{ skill.title }}</div>
-        <div class="cv-progress white" >
-            <div class="cv-progress-value" style="width: {{ skill.progress }}"></div>
+    {% if skill.hide_in_printable_cv != true %}
+      <div class="cv-left-side-field row">
+        <div class="icon-field col-1">{{ skill.icon }}</div>
+        <div class="text-field col">
+          <div class="title-field">{{ skill.title }}</div>
+          <div class="cv-progress white" >
+              <div class="cv-progress-value" style="width: {{ skill.progress }}"></div>
+          </div>
+          <p class="value-field">{{ skill.description }}</p>
         </div>
-        <p class="value-field">{{ skill.description }}</p>
       </div>
-    </div>
+    {% endif %}
   {% endfor %}
 </div>
 {% endif %}
 
 {% if page.identifier == "my-cv" %}
   <ul class="cv-button">
-    <li class="navigation__item"><a href="#" title="Download CV in English in PDF format" >Download CV in English (PDF)</a></li>
+    <li class="navigation__item">
+      <a href="{{ site.baseurl }}/files/full-stack-web-developer-Eissa-Soubhi-{{ page.lang }}.pdf"
+        target="_blank" download
+        title="{{ _trans.cv.left_side.download_cv }} (PDF)" >
+        {{ _trans.cv.left_side.download_cv }} (PDF)
+      </a>
+    </li>
   </ul>
 {% endif %}

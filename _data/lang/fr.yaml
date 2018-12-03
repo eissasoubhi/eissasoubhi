@@ -1,1 +1,122 @@
-title: Bonjour
+cv:
+  title: Développeur Web Full-Stack
+  lang_buttons:
+    en: Cv in Englais
+    fr: Cv in French
+  profile_title: Profil
+  bio: >
+      Je suis développeur web Full-Stack de 4 ans d'expérience. <br>
+      Je suis passionné par la programmation Web, j'aime apprendre de nouvelles compétences en programmation et des techniques de codage pour construire des sites Web sophistiqués et des applications puissantes. <br>
+  experience:
+    name: Expérience
+    list:
+      - date: 2018 Mnt
+        title: Développeur Web Full-Stack
+        subtitle: Auto-entrepreneur
+        description: >
+          Je répond aux besoins de mes clients pour la création de leur propre site web ou application web. <br />
+          Je travaille avec Wordpress et Prestashop pour les sitesweb classiques et Laravel et Vue, Angular ou React pour des projets personnalisés.
+
+      - date: 2015 2017
+        title: Responsable Du Service Informatique
+        subtitle: Tailor Corner
+        link: https://www.tailorcorner.fr/
+        link_title: site web de Tailor Corner
+        description: >
+          Création et maintenance des sites web et des applications web de l'entreprise. <br>
+          Les technologies souvent utilisées: <br>
+          Laravel 4.2 et 5.2, Bootstrap, Javascript / JQuery, GIT ..
+
+      - date: 2013 2015
+        title: Développeur Web
+        subtitle: Sypro technologies
+        link: https://www.sypro.fr/
+        link_title: site web de Sypro technologies
+        description: >
+          Création de sites Web avec PHP natif, Laravel 4.2, HTML/CSS3, Bootstrap et Javascript/JQuery.
+  education:
+    name: Diplômes
+    list:
+    - date: 2015 2017
+      title: Master Professionnel En Ingénierie De Conception Et De Développement D'Applications
+      subtitle: Faculté des Sciences et Techniques de Settat ( FST )
+
+    - date: 2014 2015
+      title: Licence Professionnelle En MIAGE
+      subtitle: Faculté des Sciences et Techniques de Settat ( FST )
+
+    - date: 2011 2013
+      title: Diploma Of Vocational Training
+      subtitle: Institut Spécialisé de Gestion et d'Informatique de Casablanca ( ISGI ) - OFPPT
+  skills:
+    name: Compétences
+    list:
+    - title: PHP
+      icon: <i class="fab fa-php"></i>
+      progress: 90%
+      description: >
+        Création d'applications Web et d'API REST à l'aide de Laravel.
+
+    - title: Javascript
+      icon: <i class="fab fa-js"></i>
+      progress: 80%
+      description: >
+        Création d'applications Web interactives avec Vue, Angular ou React. <br />
+        Création de plugins et d’extensions Google Chrome.
+
+    - title: CSS/HTML
+      icon: <i class="fab fa-css3-alt"></i>
+      progress: 90%
+      description: >
+        Transformation d'une maquette en un projet CSS/HTML stable en utilisant Bootstrap prêt au développement, familier avec l'optimisation des moteurs de recherche (SEO).
+
+    - title: Design
+      icon: <i class="fas fa-crop"></i>
+      progress: 40%
+      hide_in_printable_cv: true
+      description: >
+        Familier avec les outils Adobe (Photoshop, Illustrator).
+  network:
+    name: Réseaux
+    find_me_on: 'Sur'
+    list:
+    - title: Github
+      link: https://github.com
+      name: github
+      icon: <i class="fab fa-github"></i>
+
+    - title: LinkedIn
+      link: https://linkedin.com
+      path: /in
+      name: linkedin
+      icon: <i class="fab fa-linkedin"></i>
+  left_side:
+    download_cv: Télécharger le CV en français
+    info:
+      title: Infos
+      list:
+        - title: Nationalité
+          value: Marocain
+          icon: <i class="fas fa-flag"></i>
+
+        - title: Adresse
+          value: NR 43 impasse Aouja AM Casablanca Maroc
+          icon: <i class="fas fa-address-card"></i>
+
+        - title: Téléphone
+          value: +212 663 317 740
+          icon: <i class="fas fa-phone"></i>
+
+        - title: Email
+          value: eissa.soubhi@gmail.com
+          icon: <i class="fas fa-envelope"></i>
+
+        - title: Langues
+          value: Arabic, English, French
+          icon: <i class="fas fa-globe-africa"></i>
+
+        - title: Site Web
+          value: <a href="http://eissa-soubhi.com" title="Vsite eissa-soubhi.com" target="_blank">eissa-soubhi.com</a>
+          icon: <i class="fas fa-mouse-pointer"></i>
+          hide_in_printable_cv: true
+

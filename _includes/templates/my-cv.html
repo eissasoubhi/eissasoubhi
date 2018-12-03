@@ -1,9 +1,25 @@
 {%- include trans.html -%}
 <div class="cv-page">
-  <div class="cv-languages-buttons">
-    <a href="{{ site.baseurl }}/my-cv" class="{%- if page.lang == 'en' -%} current {%- endif -%}" title="{{ _trans.cv.lang_buttons.en }}">En</a>
-    <a href="{{ site.baseurl }}/my-cv/fr" class="{%- if page.lang == 'fr' -%} current {%- endif -%}" title="{{ _trans.cv.lang_buttons.fr }}">Fr</a>
-  </div>
+
+  {% if page.identifier != "cv-printable" %}
+    <div class="cv-languages-buttons">
+      <a href="{{ site.baseurl }}/my-cv" class="{%- if page.lang == 'en' -%} current {%- endif -%}" title="{{ _trans.cv.lang_buttons.en }}">En</a>
+      <a href="{{ site.baseurl }}/my-cv/fr" class="{%- if page.lang == 'fr' -%} current {%- endif -%}" title="{{ _trans.cv.lang_buttons.fr }}">Fr</a>
+    </div>
+  {% endif %}
+
+  {% if page.identifier == "cv-printable" %}
+    <div class="pdf-generator">
+      <a href="http://www.winnovative-software.com/free-html-to-pdf-converter/"
+        title="PDF generator" target="_blank">
+        <i class="fas fa-cogs"></i>
+      </a>
+      <a href="https://www.sejda.com/pdf-editor" title="PDF file editor" target="_blank">
+        <i class="fas fa-edit"></i>
+      </a>
+    </div>
+  {% endif %}
+
   <h2 class="profile-title ">{{ _trans.cv.profile_title }}</h2>
   {%- assign my_age = 'now' | date: "%Y" | minus:1991 -%}
   {%- assign my_experience = 'now' | date: "%Y" | minus:2013 -%}
@@ -59,7 +75,7 @@
       {% endfor %}
     </div>
   </div>
-  {%- endif -%}
+
   <div class="cv-section">
     <h3 class="cv-section-title"><i class="fas fa-share-alt"></i> {{ _trans.cv.network.name }}</h3>
 
@@ -81,5 +97,5 @@
       {%- endfor -%}
     </div>
   </div>
-
+  {%- endif -%}
 </div>

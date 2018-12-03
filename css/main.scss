@@ -196,6 +196,8 @@ pre.highlight code,
 
   .cv-subsection-date {
     width: 33px;
+    max-width: 33px;
+    min-width: 33px;
     margin-right: 20px;
     word-spacing: 999px;
     line-height: 28px;
@@ -231,9 +233,6 @@ pre.highlight code,
     a {
       color: #333;
     }
-  }
-  .cv-subsection-description {
-    text-transform: capitalize;
   }
 
   .cv-subsection-details {
@@ -311,29 +310,35 @@ pre.highlight code,
   }
 }
 
+body.cv-printable {
+  display: flex;
+  align-items: flex-start;
+}
+
 .cv-printable {
-  .cv-languages-buttons {
-    display: none;
-  }
 
   .panel-cover {
     background-image: none !important;
     position: relative;
     height: auto;
+    min-height: 1500px;
+    left: -1px;
   }
 
   .content-wrapper {
     margin-left: 0;
   }
 
-  .panel-cover,
-  .content-wrapper {
-    display: inline-block;
-    vertical-align: top;
+  .panel-main {
+    padding: 70px 0;
+  }
+
+  .content-wrapper__inner {
+    padding: 10px 0;
   }
 
   .panel-main {
-    padding: 70px 0;
+    padding: 30px 0;
   }
 }
 
@@ -384,4 +389,21 @@ pre.highlight code,
   .cv-progress {
     margin-bottom: 10px;
   }
+}
+
+.pdf-generator {
+  position: absolute;
+  right: 850px;
+  top: 38px;
+}
+
+.pdf-generator a{
+  display: block;
+  border: 1px solid;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 100%;
+  margin-bottom: 10px;
 }

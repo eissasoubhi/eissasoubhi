@@ -1,4 +1,5 @@
 cv:
+  title: Full-Stack Web Developer
   lang_buttons:
     en: Cv in Englais
     fr: Cv in French
@@ -9,26 +10,27 @@ cv:
     name: Experience
     list:
       - date: 2018 Now
-        title: Full Stack Developer
+        title: Full Stack Web Developer
         subtitle: Auto-entrepreneur
         description: >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cupiditate labore aliquid, id sed possimus culpa, velit expedita non quasi!
+          I listen to the market and respond to my clients needs for creating their own website or web application. <br />
+          I work with Wordpress and Prestashop for classic websites and Laravel and Vue, Angular or React for custom projects.
 
       - date: 2015 2017
         title: IT Manager
         subtitle: Tailor Corner
         link: https://www.tailorcorner.fr/
-        link_title: Tailor Corner website"
+        link_title: Tailor Corner website
         description: >
           Creating and maintaining the company's websites and applications.<br>
           Technologies usually used:<br>
-          Laravel 4.2 and 5.2, Bootstrap, Javascript/JQuery, GIT, npm...
+          Laravel 4.2 and 5.2, Bootstrap, Javascript/JQuery, GIT..
 
       - date: 2013 2015
         title: Web Developer
         subtitle: Sypro technologies
         link: https://www.sypro.fr/
-        link_title: Sypro technologies website"
+        link_title: Sypro technologies website
         description: >
           Creating websites with native PHP, Laravel 4.2, HTML/CSS3, Bootstrap and Javascript/JQuery.
   education:
@@ -44,7 +46,7 @@ cv:
 
     - date: 2011 2013
       title: Diploma Of Vocational Training
-      subtitle: FST University
+      subtitle: ISGI Vocational High School
   skills:
     name: Skills
     list:
@@ -52,13 +54,13 @@ cv:
       icon: <i class="fab fa-php"></i>
       progress: 90%
       description: >
-        Building web applications and REST APIs using Laravel framework.
+        Building web applications and REST APIs using Laravel.
 
     - title: Javascript
       icon: <i class="fab fa-js"></i>
       progress: 80%
       description: >
-        Building interactive web applications with JQuery and AngularJs.<br />
+        Building interactive web applications with Vue, Angular or React.<br />
         Creating plugins and Google Chrome Extensions.
 
     - title: CSS/HTML
@@ -70,6 +72,7 @@ cv:
     - title: Design
       icon: <i class="fas fa-crop"></i>
       progress: 40%
+      hide_in_printable_cv: true
       description: >
         Familiar with Adobe tools (Photoshop, Illustrator).
   network:
@@ -86,3 +89,33 @@ cv:
       path: /in
       name: linkedin
       icon: <i class="fab fa-linkedin"></i>
+  left_side:
+    download_cv: Download CV in English
+    info:
+      title: Info
+      list:
+        - title: Nationality
+          value: Moroccan
+          icon: <i class="fas fa-flag"></i>
+
+        - title: Address
+          value: NR 43 impasse Aouja AM Casablanca Maroc
+          icon: <i class="fas fa-address-card"></i>
+
+        - title: Phone
+          value: +212 663 317 740
+          icon: <i class="fas fa-phone"></i>
+
+        - title: Email
+          value: eissa.soubhi@gmail.com
+          icon: <i class="fas fa-envelope"></i>
+
+        - title: Languages
+          value: Arabic, English, French
+          icon: <i class="fas fa-globe-africa"></i>
+
+        - title: Website
+          value: <a href="http://eissa-soubhi.com" title="Vsite eissa-soubhi.com" target="_blank">eissa-soubhi.com</a>
+          icon: <i class="fas fa-mouse-pointer"></i>
+          hide_in_printable_cv: true
+
