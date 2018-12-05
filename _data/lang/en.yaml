@@ -90,7 +90,7 @@ cv:
       name: linkedin
       icon: <i class="fab fa-linkedin"></i>
   left_side:
-    download_cv: Download CV in English
+    download_cv: Download CV
     info:
       title: Info
       list:

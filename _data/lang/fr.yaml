@@ -5,7 +5,7 @@ cv:
     fr: Cv in French
   profile_title: Profil
   bio: >
-      Je suis développeur web Full-Stack de 4 ans d'expérience. <br>
+      Je suis un développeur web Full-Stack de 4 ans d'expérience. <br>
       Je suis passionné par la programmation Web, j'aime apprendre de nouvelles compétences en programmation et des techniques de codage pour construire des sites Web sophistiqués et des applications puissantes. <br>
   experience:
     name: Expérience
@@ -91,7 +91,7 @@ cv:
       name: linkedin
       icon: <i class="fab fa-linkedin"></i>
   left_side:
-    download_cv: Télécharger le CV en français
+    download_cv: Télécharger le CV
     info:
       title: Infos
       list:

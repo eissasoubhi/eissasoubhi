@@ -1,10 +1,10 @@
 ---
-- name: Etaku.ma
+- name: Etaku.eissa-soubhi.com
   image: etaku.jpg
   url: http://etaku.eissa-soubhi.com
   description: An e-commerce website for selling customizable T-shirts (using Laravel).
 
-- name: Newfilms.top
+- name: Newfilms.eissa-soubhi.com
   image: newfilms.jpg
   url: http://newfilms.eissa-soubhi.com
   description: A website to watch latest Movies & TV Shows Online (using Laravel).

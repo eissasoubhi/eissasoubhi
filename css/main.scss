@@ -134,8 +134,12 @@ pre.highlight code,
 }
 
 .cv-left-side {
-    width: 285px;
-    margin: 0 auto;
+  width: 285px;
+  margin: 0 auto;
+}
+
+.cv-button {
+  width: 285px;
 }
 
 .cv-title {
@@ -279,6 +283,15 @@ pre.highlight code,
     }
   }
 
+  .cv-subsection-link a{
+    color: #666666;
+  }
+}
+
+body.my-cv {
+
+@media (min-width: 768px) {
+
   .cv-languages-buttons {
     position: absolute;
     left: 515px;
@@ -297,6 +310,10 @@ pre.highlight code,
       border-radius: 100%;
       margin-bottom: 7px;
       color: #717171;
+      margin: 0;
+      opacity: 1;
+      padding: 0;
+      top: -1px;
     }
 
     a.current {
@@ -304,10 +321,7 @@ pre.highlight code,
       font-weight: bold;
     }
   }
-
-  .cv-subsection-link a{
-    color: #666666;
-  }
+}
 }
 
 body.cv-printable {

@@ -2,7 +2,7 @@
 <html>
   {% include head.html %}
 
-  <body class="{%- if page.identifier == 'cv-printable' -%} cv-printable {%- endif -%}">
+  <body class="{{- page.identifier -}}">
     {% include header.html %}
 
     <div class="content-wrapper">

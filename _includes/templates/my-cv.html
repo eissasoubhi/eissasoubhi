@@ -1,13 +1,5 @@
 {%- include trans.html -%}
 <div class="cv-page">
-
-  {% if page.identifier != "cv-printable" %}
-    <div class="cv-languages-buttons">
-      <a href="{{ site.baseurl }}/my-cv" class="{%- if page.lang == 'en' -%} current {%- endif -%}" title="{{ _trans.cv.lang_buttons.en }}">En</a>
-      <a href="{{ site.baseurl }}/my-cv/fr" class="{%- if page.lang == 'fr' -%} current {%- endif -%}" title="{{ _trans.cv.lang_buttons.fr }}">Fr</a>
-    </div>
-  {% endif %}
-
   {% if page.identifier == "cv-printable" %}
     <div class="pdf-generator">
       <a href="http://www.winnovative-software.com/free-html-to-pdf-converter/"
@@ -63,7 +55,7 @@
 
     <div class="row cv-2-cols">
       {% for skill in _trans.cv.skills.list %}
-        <div class="cv-subsection cv-col col-6">
+        <div class="cv-subsection cv-col col-md-6">
           <div class="cv-subsection-details">
             <h4 class="cv-subsection-title">{{ skill.title }}</h4>
             <div class="cv-progress" >
@@ -81,7 +73,7 @@
 
     <div class="row cv-2-cols">
       {%- for network in _trans.cv.network.list -%}
-        <div class="cv-subsection cv-col col-6">
+        <div class="cv-subsection cv-col col-md-6">
           <div class="cv-subsection-details">
             <h4 class="cv-subsection-title">{{ network.title }}</h4>
             {% assign network_key = network.name | append: '_username' %}
