@@ -1,4 +1,4 @@
-<img src="/images/profile.jpg?raw=true" width="100" height="100" rel="Eissa Soubhi's profile picture" title="Eissa Soubhi's profile picture">
+<img src="/images/profile.jpg?raw=true" width="130" height="130" rel="Eissa Soubhi's profile picture" title="Eissa Soubhi's profile picture">
 
 # About me 
 
