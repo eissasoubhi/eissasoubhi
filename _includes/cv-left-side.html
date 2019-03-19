@@ -2,21 +2,23 @@
 
 
 {% if page.identifier == "cv-printable" %}
-  <h3 class="cv-left-side-title ">{{ _trans.cv.left_side.info.title }}</h3>
+<h3 class="cv-left-side-title ">{{ _trans.cv.left_side.info.title }}</h3>
 {% endif %}
 <div class="cv-left-side">
   {% for info in _trans.cv.left_side.info.list %}
-    {% unless info.hide_in_printable_cv == true and page.identifier != "cv-printable" %}
-      <div class="cv-left-side-field row">
-        <div class="icon-field col-1">
-          {{ info.icon }}
-        </div>
-        <div class="text-field col">
-          <div class="title-field">{{ info.title }}</div>
-          <p class="value-field">{{ info.value }}</p>
-        </div>
-      </div>
-    {% endunless %}
+  {% unless info.hide_in_printable_cv == true and page.identifier == "cv-printable" %}
+  {% unless info.hide_in_web_cv == true and page.identifier == "my-cv" %}
+  <div class="cv-left-side-field row">
+    <div class="icon-field col-1">
+      {{ info.icon }}
+    </div>
+    <div class="text-field col">
+      <div class="title-field">{{ info.title }}</div>
+      <p class="value-field">{{ info.value }}</p>
+    </div>
+  </div>
+  {% endunless %}
+  {% endunless %}
   {% endfor %}
 </div>
 
@@ -24,40 +26,44 @@
 <h3 class="cv-left-side-title ">{{ _trans.cv.skills.name }}</h3>
 <div class="cv-left-side skills">
   {% for skill in _trans.cv.skills.list %}
-    {% if skill.hide_in_printable_cv != true %}
-      <div class="cv-left-side-field row">
-        <div class="icon-field col-1">{{ skill.icon }}</div>
-        <div class="text-field col">
-          <div class="title-field">{{ skill.title }}</div>
-          <div class="cv-progress white" >
-              <div class="cv-progress-value" style="width: {{ skill.progress }}"></div>
-          </div>
-          <p class="value-field">{{ skill.description }}</p>
-        </div>
+  {% if skill.hide_in_printable_cv != true %}
+  <div class="cv-left-side-field row">
+    <div class="icon-field col-1">{{ skill.icon }}</div>
+    <div class="text-field col">
+      <div class="title-field">{{ skill.title }}</div>
+      <div class="cv-progress white">
+        <div class="cv-progress-value" style="width: {{ skill.progress }}"></div>
       </div>
-    {% endif %}
+      <p class="value-field">{{ skill.description }}</p>
+    </div>
+  </div>
+  {% endif %}
   {% endfor %}
 </div>
 {% endif %}
 
 {% if page.identifier == "my-cv" %}
-  <ul class="cv-button">
-    <li class="navigation__item">
-      <a href="{{ site.baseurl }}/files/full-stack-web-developer-Eissa-Soubhi-{{ page.lang }}.pdf"
-        target="_blank" download
-        title="{{ _trans.cv.left_side.download_cv }} (PDF)" >
-        {{ _trans.cv.left_side.download_cv }} (PDF)
-      </a>
+<ul class="cv-button">
+  <li class="navigation__item">
+    <a href="{{ site.baseurl }}/files/full-stack-web-developer-Eissa-Soubhi-{{ page.lang }}.pdf" target="_blank"
+      download title="{{ _trans.cv.left_side.download_cv }} (PDF)">
+      {{ _trans.cv.left_side.download_cv }} (PDF)
+    </a>
+  </li>
+</ul>
+<div class="navigation-wrapper">
+  <div class="cv-languages-buttons">
+    <li class="navigation__item ">
+      <a href="{{ site.baseurl }}/" class="{{ _trans.home }}" title="{{ _trans.home }}"><i class="fa fa-home"></i></a>
     </li>
-  </ul>
-  <div class="navigation-wrapper">
-    <div class="cv-languages-buttons">
-      <li class="navigation__item ">
-        <a href="{{ site.baseurl }}/my-cv" class="{%- if page.lang == 'en' -%} current {%- endif -%}" title="{{ _trans.cv.lang_buttons.en }}">En</a>
-      </li>
-      <li class="navigation__item ">
-        <a href="{{ site.baseurl }}/my-cv/fr" class="{%- if page.lang == 'fr' -%} current {%- endif -%}" title="{{ _trans.cv.lang_buttons.fr }}">Fr</a>
-      </li>
-    </div>
+    <li class="navigation__item ">
+      <a href="{{ site.baseurl }}/my-cv" class="{%- if page.lang == 'en' -%} current {%- endif -%}"
+        title="{{ _trans.cv.lang_buttons.en }}">En</a>
+    </li>
+    <li class="navigation__item ">
+      <a href="{{ site.baseurl }}/my-cv/fr" class="{%- if page.lang == 'fr' -%} current {%- endif -%}"
+        title="{{ _trans.cv.lang_buttons.fr }}">Fr</a>
+    </li>
   </div>
+</div>
 {% endif %}

@@ -8,7 +8,7 @@
   <div class="panel-main">
 
     <div class="panel-main__inner panel-inverted">
-    <div class="panel-main__content">
+      <div class="panel-main__content">
         <a href="{{ site.baseurl }}/" title="link to home of {{ site.title }}">
           <img src="{{ site.baseurl }}/images/profile.jpg" class="user-image" alt="My Profile Photo">
           <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
@@ -16,82 +16,89 @@
         <hr class="panel-cover__divider">
         <p class="panel-cover__description">
           {% if page.class == "cv" %}
-            <div class="cv-title">{{ _trans.cv.title }}</div>
+          <div class="cv-title">{{ _trans.cv.title }}</div>
           {% else %}
-            {{ site.description }}
+          {{ site.description }}
           {% endif %}
         </p>
         {%- if page.identifier != "cv-printable" -%}
-          <hr class="panel-cover__divider panel-cover__divider--secondary">
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
         {%- endif -%}
         {% if page.class == "cv" %}
-          {%- include cv-left-side.html -%}
+        {%- include cv-left-side.html -%}
         {% else %}
-          <div class="navigation-wrapper">
-            <nav class="cover-navigation cover-navigation--primary">
-              <ul class="navigation">
-                <li class="navigation__item"><a href="{{ site.baseurl }}/#aboutme" title="link to {{ site.title }} aboutme" class="aboutme-button">About me</a></li>
-                <li class="navigation__item"><a href="{{ site.baseurl }}/my-cv" title="link to {{ site.title }} CV" class="aboutme-button">My CV</a></li>
-                <li class="navigation__item"><a href="{{ site.baseurl }}/my-projects" title="link to {{ site.title }} projects" class="aboutme-button">My projects</a></li>
-              </ul>
-            </nav>
+        <div class="navigation-wrapper">
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="{{ site.baseurl }}/#aboutme"
+                  title="link to {{ site.title }} aboutme" class="aboutme-button">About me</a></li>
+              <li class="navigation__item"><a href="{{ site.baseurl }}/my-cv" title="link to {{ site.title }} CV"
+                  class="aboutme-button">My CV</a></li>
+              <li class="navigation__item"><a href="{{ site.baseurl }}/my-projects"
+                  title="link to {{ site.title }} projects" class="aboutme-button">My projects</a></li>
+            </ul>
+          </nav>
 
-            <nav class="cover-navigation navigation--social">
-              <ul class="navigation">
+          <nav class="cover-navigation navigation--social">
+            <ul class="navigation">
 
               {% if site.author.github_username %}
-                <!-- GitHub -->
-                <li class="navigation__item">
-                  <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
-                    <i class="icon icon-social-github"></i>
-                    <span class="label">GitHub</span>
-                  </a>
-                </li>
+              <!-- GitHub -->
+              <li class="navigation__item">
+                <a href="https://www.github.com/{{ site.author.github_username }}"
+                  title="{{ site.author.github_username }} on GitHub" target="_blank">
+                  <i class="icon icon-social-github"></i>
+                  <span class="label">GitHub</span>
+                </a>
+              </li>
               {% endif %}
 
               {% if site.author.linkedin_username %}
-                <!-- LinkedIn -->
-                <li class="navigation__item">
-                  <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
-                    <i class="icon icon-social-linkedin"></i>
-                    <span class="label">LinkedIn</span>
-                  </a>
-                </li>
+              <!-- LinkedIn -->
+              <li class="navigation__item">
+                <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}"
+                  title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
+                  <i class="icon icon-social-linkedin"></i>
+                  <span class="label">LinkedIn</span>
+                </a>
+              </li>
               {% endif %}
 
               {% if site.author.skype_username %}
-                <!-- Skype -->
-                <li class="navigation__item">
-                  <a href="skype:{{ site.author.skype_username }}?chat" title="@{{ site.author.skype_username }} on Skype">
-                    <i class="icon icon-social-skype"></i>
-                    <span class="label">Skype</span>
-                  </a>
-                </li>
+              <!-- Skype -->
+              <li class="navigation__item">
+                <a href="skype:{{ site.author.skype_username }}?chat"
+                  title="@{{ site.author.skype_username }} on Skype">
+                  <i class="icon icon-social-skype"></i>
+                  <span class="label">Skype</span>
+                </a>
+              </li>
               {% endif %}
 
               {% if site.author.facebook_username %}
-                <!-- Facebook -->
-                <li class="navigation__item">
-                  <a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.facebook_username }} on Facebook" target="_blank">
-                    <i class="icon icon-social-facebook"></i>
-                    <span class="label">Facebook</span>
-                  </a>
-                </li>
+              <!-- Facebook -->
+              <li class="navigation__item">
+                <a href="http://fb.me/{{ site.author.facebook_username }}"
+                  title="{{ site.author.facebook_username }} on Facebook" target="_blank">
+                  <i class="icon icon-social-facebook"></i>
+                  <span class="label">Facebook</span>
+                </a>
+              </li>
               {% endif %}
 
               {% if site.author.email %}
-                <!-- Email -->
-                <li class="navigation__item">
-                  <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
-                    <i class="icon icon-mail"></i>
-                    <span class="label">Email</span>
-                  </a>
-                </li>
+              <!-- Email -->
+              <li class="navigation__item">
+                <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
+                  <i class="icon icon-mail"></i>
+                  <span class="label">Email</span>
+                </a>
+              </li>
               {% endif %}
 
-              </ul>
-            </nav>
-          </div>
+            </ul>
+          </nav>
+        </div>
         {% endif %}
 
       </div>

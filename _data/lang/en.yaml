@@ -1,16 +1,19 @@
 cv:
-  title: Full-Stack Web Developer
+  title: Full Stack PHP Developer
+  home: Home
   lang_buttons:
     en: Cv in Englais
     fr: Cv in French
   profile_title: Profile
-  bio: >
-      I'm a $age years old full-stack web developer with $experience years of experience from Casablanca, the kingdom of Morocco.<br> I am passionate about web programming, I like learning new programming skills and coding techniques to build fancy websites and powerful applications.<br>
+  bio1: >
+      I'm a $age years old full stack PHP developer with $experience years of experience from Casablanca, the kingdom of Morocco.<br>
+  bio2: >
+      I am passionate about web programming, I like learning new programming skills and coding techniques to build fancy websites and powerful applications.<br>
   experience:
     name: Experience
     list:
       - date: 2018 Now
-        title: Full Stack Web Developer
+        title: Full Stack PHP Developer
         subtitle: Auto-entrepreneur
         description: >
           I listen to the market and respond to my clients' needs for creating their own website or web application. <br />
@@ -22,9 +25,10 @@ cv:
         link: https://www.tailorcorner.fr/
         link_title: Tailor Corner website
         description: >
-          Creating and maintaining the company's websites and applications.<br>
-          Technologies usually used:<br>
-          Laravel 4.2 and 5.2, Bootstrap, Javascript/JQuery, GIT..
+          • Built a backoffice to manage supplies, users' orders, cms pages, MailChimp campaigns synchronization with the database... with Symfony 2.6 and node.js<br />
+          • Rebuilt the company's website UI with responsive in mind with Bootstrap and Javascript/JQuery.<br />
+          • Redesigned the company's website with a better UX.<br />
+          • Maintaining the company's website built with Laravel.
 
       - date: 2013 2015
         title: Web Developer
@@ -32,7 +36,10 @@ cv:
         link: https://www.sypro.fr/
         link_title: Sypro technologies website
         description: >
-          Creating websites with native PHP, Laravel 4.2, HTML/CSS3, Bootstrap and Javascript/JQuery.
+          The company, with 16 web developers, creates static websites for business owners in France.<br />
+          • I created around 40 to 50 static websites every month with HTML/CSS3, Bootstrap and Javascript/JQuery. and 13 web applications with PHP/Symfony 2.3.<br />
+          • I Saved half of the time needed to create a static website by building a website generator.
+
   education:
     name: Education
     list:
@@ -54,27 +61,27 @@ cv:
       icon: <i class="fab fa-php"></i>
       progress: 90%
       description: >
-        Building web applications and REST APIs using Laravel.
+        • Building web applications and REST APIs using Laravel or Symfony.
 
     - title: Javascript
       icon: <i class="fab fa-js"></i>
       progress: 80%
       description: >
-        Building interactive web applications with Vue, Angular or React.<br />
-        Creating plugins and Google Chrome Extensions.
+        • Building interactive web applications with Vue or React.<br />
+        • Creating plugins and Google Chrome Extensions.
 
-    - title: CSS/HTML
+    - title: SASS/CSS/HTML
       icon: <i class="fab fa-css3-alt"></i>
       progress: 90%
       description: >
-        Transform a design into a stable CSS/HTML project using Bootstrap ready for development, familiar with search engine optimization (SEO).
+        • Transform a design into a stable CSS/HTML project using Bootstrap ready for development, familiar with search engine optimization (SEO).
 
-    - title: Design
-      icon: <i class="fas fa-crop"></i>
+    - title: Outils
+      icon: <i class="fas fa-tools"></i>
       progress: 40%
-      hide_in_printable_cv: true
+      hide_in_printable_cv: false
       description: >
-        Familiar with Adobe tools (Photoshop, Illustrator).
+        Git, Sublime Text, VS Code, Trello and Mac Terminal.
   network:
     name: Network
     find_me_on: 'On'
@@ -101,6 +108,7 @@ cv:
         - title: Address
           value: NR 43 impasse Aouja AM Casablanca Maroc
           icon: <i class="fas fa-address-card"></i>
+          hide_in_printable_cv: true
 
         - title: Phone
           value: +212 663 317 740
@@ -117,5 +125,5 @@ cv:
         - title: Website
           value: <a href="http://eissa-soubhi.com" title="Vsite eissa-soubhi.com" target="_blank">eissa-soubhi.com</a>
           icon: <i class="fas fa-mouse-pointer"></i>
-          hide_in_printable_cv: true
+          hide_in_web_cv: true
 

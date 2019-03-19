@@ -294,7 +294,8 @@ body.my-cv {
 
   .cv-languages-buttons {
     position: absolute;
-    left: 515px;
+    // left: 515px;
+    left: 96%;
     top: 0px;
     z-index: 999;
   }
@@ -353,6 +354,15 @@ body.cv-printable {
 
   .panel-main {
     padding: 30px 0;
+  }
+
+  .cv-bio {
+      margin-bottom: 20px;
+      margin-top: 20px;
+  }
+
+  .cv-page .cv-section {
+      margin-bottom: 30px;
   }
 }
 
