@@ -127,4 +127,5 @@ cv:
           value: <a href="http://eissa-soubhi.com" title="Vsite eissa-soubhi.com" target="_blank">eissa-soubhi.com</a>
           icon: <i class="fas fa-mouse-pointer"></i>
           hide_in_web_cv: true
-
+  files:
+    download: développeur-php-full-stack.pdf
