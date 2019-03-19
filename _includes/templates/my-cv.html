@@ -14,7 +14,16 @@
   {%- assign my_age = 'now' | date: "%Y" | minus:1991 -%}
   {%- assign my_experience = 'now' | date: "%Y" | minus:2013 -%}
 
+  {% if page.identifier == "cv-printable" and _trans.cv.hide_bio_in_printibale_cv != true%}
+  <p class="cv-bio">{{ _trans.cv.bio2}}</p>
+  {% endif %}
 
+  {% if page.identifier != "cv-printable" %}
+  <h2 class="profile-title ">{{ _trans.cv.profile_title }}</h2>
+  <p class="cv-bio">
+    {{ _trans.cv.bio1 | replace: "$age", my_age | replace: "$experience", my_experience }}{{ _trans.cv.bio2 }}
+  </p>
+  {% endif %}
 
   <div class="cv-section">
     <h3 class="cv-section-title"><i class="fas fa-briefcase"></i> {{ _trans.cv.experience.name }}</h3>

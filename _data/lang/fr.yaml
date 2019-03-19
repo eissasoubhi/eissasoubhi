@@ -5,6 +5,7 @@ cv:
     en: Cv in Englais
     fr: Cv en Français
   profile_title: Profil
+  hide_bio_in_printibale_cv: true
   bio1: >
       Je suis un développeur PHP Full Stack avec $experience ans d'expérience.<br>
   bio2: >
