@@ -7,8 +7,6 @@ PHP 8 · Symfony · TypeScript · React / Next.js · Vue / Nuxt
 
 I work end-to-end across backend, frontend, architecture, quality, performance, and delivery. My strongest background is in PHP/Symfony, complemented by modern TypeScript frontends and production experience on high-traffic media, e-commerce, marketplace, and business platforms.
 
-Recent environments include **IDGARAGES, France Télévisions, Nexity, Caisse des Dépôts, Edenred, and Orange Business**.
-
 ## What I bring
 
 - **Backend:** PHP 8, Symfony, API design, Doctrine, PostgreSQL/MySQL, Redis, RabbitMQ, asynchronous processing
