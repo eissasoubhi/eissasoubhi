@@ -1,47 +1,66 @@
-<img src="/images/profile.jpg?raw=true" width="130" height="130" rel="Eissa Soubhi's profile picture" title="Eissa Soubhi's profile picture">
+# Eissa Soubhi
 
-# About me
+**Senior Full-Stack Engineer / Tech Lead**  
+PHP 8 · Symfony · TypeScript · React / Next.js · Vue / Nuxt
 
-My name is Eissa Soubhi, I'm a 27 years old full stack PHP developer with 5 years of experience from Casablanca, the kingdom of Morocco.
+**11+ years building and modernizing production web platforms.** Based in France, Paris area.
 
+I work end-to-end across backend, frontend, architecture, quality, performance, and delivery. My strongest background is in PHP/Symfony, complemented by modern TypeScript frontends and production experience on high-traffic media, e-commerce, marketplace, and business platforms.
 
-## The Backend
+Recent environments include **IDGARAGES, France Télévisions, Nexity, Caisse des Dépôts, Edenred, and Orange Business**.
 
-On my projects, I've worked with many programming languages for the backend like ASP.NET, JEE and PHP but I chose to stick with PHP because I liked how it allows me to know and control what happens under the hood, but that comes with some security and performance costs so working with a Framework is a must.
-Unlike choosing a backend language, when I first worked with Laravel 4 years ago, I just fell in love with it instantly.
+## What I bring
 
----
+- **Backend:** PHP 8, Symfony, API design, Doctrine, PostgreSQL/MySQL, Redis, RabbitMQ, asynchronous processing
+- **Frontend:** TypeScript, React, Next.js, Vue, Nuxt, SSR/SSG, component-driven UI
+- **Architecture:** DDD, hexagonal architecture, CQRS, event-driven systems, modular and API-first design
+- **Quality:** automated testing, static analysis, code review, CI/CD, observability, performance engineering
+- **Delivery:** Docker, GitHub Actions, GitLab CI, Jenkins, AWS/GCP exposure, production troubleshooting
+- **Product engineering:** SEO, accessibility, Core Web Vitals, maintainability, pragmatic modernization of legacy systems
+- **Leadership:** technical design, mentoring, code quality standards, delivery support, collaboration with product and engineering teams
 
-## The Frontend
+**Symfony 8 Certified Developer.**
 
-I've worked with Vue.js, Angular and React each one of those Frameworks has its pros and cons but I liked them all and I dont mind to work with anyone of them.
-Let's not forget about CSS, there is so much to tell about this language but let me conclud it by saying I mostly work with Sass and the widly popular CSS framework Bootstrap.
-
----
-
-## IDEs and Text editors
-
-Now let's talk about IDEs and Text editors, most PHP developers say PhpStome is the best IDE for PHP and it has a lot of features, I've tried it but I prefer to keep things lightweight and simple, I think you know what I'm talking about... yes exactly it's Sublime Text... Sublime Text is and always will be my prefered code editor, I dont undersand why dont they just make it the default text editor in all OSes, you ask me why? here is my answer on Quora https://www.quora.com/Which-IDE-or-text-editor-are-you-using-right-now-Why/answer/Eissa-Soubhi
-
----
-
-## Current open-source project
+## Current open-source work
 
 ### [PRTruth](https://github.com/eissasoubhi/PRTruth)
 
 **Your pull request says it is done. PRTruth checks the evidence.**
 
-PRTruth is an open-source CLI and GitHub Action that verifies pull requests against issue acceptance criteria using deterministic evidence from GitHub Actions, changed files, repository instructions, and PR completion claims.
+PRTruth is an open-source CLI and GitHub Action for evidence-based pull request verification. It compares issue acceptance criteria and PR completion claims with deterministic repository and CI evidence, then reports `PROVEN`, `FAILED`, or `UNPROVEN`.
 
 ```bash
-npx prtruth verify --issue 148 --pr 152
+npx -y prtruth@latest verify \
+  --repo owner/repository \
+  --issue 123 \
+  --pr 456 \
+  --policy report-only
 ```
 
-It reports `PROVEN`, `FAILED`, or `UNPROVEN` so reviewers can distinguish actual evidence from confident completion claims, including PRs created by AI coding agents.
+It is built for repositories where humans, AI coding agents, and automation can produce changes faster than reviewers can manually verify every completion claim.
 
----
+### [AI SaaS Factory](https://github.com/eissasoubhi/ai-saas-factory)
 
-## My projects
+A production-oriented AI-native B2B SaaS foundation built with **Next.js, React, TypeScript, PostgreSQL, Stripe, durable jobs, private storage, RAG, metering, audit logs, and observability**.
 
-Programming skills are like muscles, if we stop training them. soon, they will be weak/forgotten, in this case side projects are the best training to keep up with the new technologies and enhance my programming skills. and if possible, also contribute to the opensouce community.
-[Here are some of my projects](http://eissa-soubhi.com/my-projects/)
+## Selected open-source projects
+
+| Project | What it demonstrates |
+| --- | --- |
+| [PRTruth](https://github.com/eissasoubhi/PRTruth) | Developer tooling, GitHub Actions, deterministic verification, AI-assisted engineering workflows |
+| [AI SaaS Factory](https://github.com/eissasoubhi/ai-saas-factory) | Modern full-stack architecture, SaaS foundations, AI/RAG, billing, multi-tenancy, observability |
+| [summernote-gallery](https://github.com/eissasoubhi/summernote-gallery) | JavaScript plugin development and editor integration |
+| [summernote-bricks](https://github.com/eissasoubhi/summernote-bricks) | Reusable WYSIWYG content components and frontend tooling |
+| [awesome-summernote](https://github.com/eissasoubhi/awesome-summernote) | Open-source ecosystem curation and community tooling |
+
+## Engineering approach
+
+I prefer **clear boundaries, explicit contracts, strong tests, useful CI, measurable performance, and architecture that earns its complexity**.
+
+I use AI coding tools extensively, but generated code is treated like any other production code: it still needs tests, evidence, review, security checks, and maintainable design.
+
+## Opportunities
+
+Open to discussing **Senior Full-Stack / Tech Lead** opportunities and freelance missions in France.
+
+Languages: **French · English · Arabic**
