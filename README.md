@@ -25,6 +25,22 @@ Now let's talk about IDEs and Text editors, most PHP developers say PhpStome is 
 
 ---
 
+## Current open-source project
+
+### [PRTruth](https://github.com/eissasoubhi/PRTruth)
+
+**Your pull request says it is done. PRTruth checks the evidence.**
+
+PRTruth is an open-source CLI and GitHub Action that verifies pull requests against issue acceptance criteria using deterministic evidence from GitHub Actions, changed files, repository instructions, and PR completion claims.
+
+```bash
+npx prtruth verify --issue 148 --pr 152
+```
+
+It reports `PROVEN`, `FAILED`, or `UNPROVEN` so reviewers can distinguish actual evidence from confident completion claims, including PRs created by AI coding agents.
+
+---
+
 ## My projects
 
 Programming skills are like muscles, if we stop training them. soon, they will be weak/forgotten, in this case side projects are the best training to keep up with the new technologies and enhance my programming skills. and if possible, also contribute to the opensouce community.
