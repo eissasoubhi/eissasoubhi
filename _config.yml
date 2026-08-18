@@ -1,17 +1,15 @@
 # Site settings
 title: Eissa Soubhi
-description: 'Full Stack PHP Developer From the Kingdom of Morocco'
+description: 'Senior Full-Stack Engineer / Tech Lead · PHP, Symfony, TypeScript, React, Next.js, Vue and Nuxt · 11+ years building production web platforms.'
 url: 'https://eissasoubhi.github.io'
 baseurl: '/eissasoubhi'
-# google_analytics: 'UA-XXXXXX-X'
-# disqus_shortname: 'your-disqus-name'
 
 author:
   name: 'Eissa Soubhi'
   email: eissa.soubhi@gmail.com
   twitter_username: eissa_soubhi
-  github_username:  eissasoubhi
-  linkedin_username:  aissa0soubhi
+  github_username: eissasoubhi
+  linkedin_username: aissa0soubhi
   skype_username: eissa.soubhi
 
 defaults:
@@ -34,9 +32,7 @@ sass:
     style: compressed
 
 kramdown:
-  # use Github Flavored Markdown
   input: GFM
-  # do not replace newlines by <br>s
   hard_wrap: false
 
 plugins: ['jekyll-paginate']
