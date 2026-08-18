@@ -1,19 +1,25 @@
 # Eissa Soubhi
 
-**Senior Full-Stack Engineer** · PHP / Symfony · TypeScript · React / Next.js · Vue / Nuxt
+**Senior Full-Stack Engineer / Tech Lead**  
+PHP 8 · Symfony · TypeScript · React / Next.js · Vue / Nuxt
 
-I build and modernize production web platforms across backend, frontend, architecture, testing, and delivery. I care about systems that are understandable, observable, maintainable, and easy for teams to evolve.
+**11+ years building and modernizing production web platforms.** Based in France, Paris area.
 
-Based in **Paris, France**.
+I work end-to-end across backend, frontend, architecture, quality, performance, and delivery. My strongest background is in PHP/Symfony, complemented by modern TypeScript frontends and production experience on high-traffic media, e-commerce, marketplace, and business platforms.
 
-## What I work on
+Recent environments include **IDGARAGES, France Télévisions, Nexity, Caisse des Dépôts, Edenred, and Orange Business**.
 
-- **Backend:** PHP 8, Symfony, API design, Doctrine, PostgreSQL/MySQL, Redis, RabbitMQ
-- **Frontend:** TypeScript, React, Next.js, Vue, Nuxt
-- **Architecture:** modular systems, DDD, hexagonal architecture, CQRS, event-driven workflows
-- **Engineering quality:** automated testing, static analysis, CI/CD, observability, performance, accessibility
-- **Delivery:** Docker, GitHub Actions, GitLab CI, cloud-native development workflows
-- **Open source:** developer tooling, AI-assisted engineering workflows, and editor extensions
+## What I bring
+
+- **Backend:** PHP 8, Symfony, API design, Doctrine, PostgreSQL/MySQL, Redis, RabbitMQ, asynchronous processing
+- **Frontend:** TypeScript, React, Next.js, Vue, Nuxt, SSR/SSG, component-driven UI
+- **Architecture:** DDD, hexagonal architecture, CQRS, event-driven systems, modular and API-first design
+- **Quality:** automated testing, static analysis, code review, CI/CD, observability, performance engineering
+- **Delivery:** Docker, GitHub Actions, GitLab CI, Jenkins, AWS/GCP exposure, production troubleshooting
+- **Product engineering:** SEO, accessibility, Core Web Vitals, maintainability, pragmatic modernization of legacy systems
+- **Leadership:** technical design, mentoring, code quality standards, delivery support, collaboration with product and engineering teams
+
+**Symfony 8 Certified Developer.**
 
 ## Current open-source work
 
@@ -31,29 +37,30 @@ npx -y prtruth@latest verify \
   --policy report-only
 ```
 
-It is designed for repositories where humans, AI coding agents, and automation can produce changes faster than reviewers can manually verify every claim.
+It is built for repositories where humans, AI coding agents, and automation can produce changes faster than reviewers can manually verify every completion claim.
 
 ### [AI SaaS Factory](https://github.com/eissasoubhi/ai-saas-factory)
 
-A production-oriented, AI-native B2B SaaS foundation built around Next.js, React, TypeScript, PostgreSQL, tenant isolation, billing, durable jobs, private files, RAG, metering, audit logs, and observability.
+A production-oriented AI-native B2B SaaS foundation built with **Next.js, React, TypeScript, PostgreSQL, Stripe, durable jobs, private storage, RAG, metering, audit logs, and observability**.
 
 ## Selected open-source projects
 
-| Project | What it does |
+| Project | What it demonstrates |
 | --- | --- |
-| [PRTruth](https://github.com/eissasoubhi/PRTruth) | Evidence-based verification for pull requests and issue acceptance criteria |
-| [summernote-gallery](https://github.com/eissasoubhi/summernote-gallery) | Server-backed image gallery extension for Summernote |
-| [summernote-bricks](https://github.com/eissasoubhi/summernote-bricks) | Reusable content components for the Summernote editor |
-| [awesome-summernote](https://github.com/eissasoubhi/awesome-summernote) | Curated resources and extensions around the Summernote ecosystem |
-| [AI SaaS Factory](https://github.com/eissasoubhi/ai-saas-factory) | Production-oriented foundation for AI-native SaaS products |
+| [PRTruth](https://github.com/eissasoubhi/PRTruth) | Developer tooling, GitHub Actions, deterministic verification, AI-assisted engineering workflows |
+| [AI SaaS Factory](https://github.com/eissasoubhi/ai-saas-factory) | Modern full-stack architecture, SaaS foundations, AI/RAG, billing, multi-tenancy, observability |
+| [summernote-gallery](https://github.com/eissasoubhi/summernote-gallery) | JavaScript plugin development and editor integration |
+| [summernote-bricks](https://github.com/eissasoubhi/summernote-bricks) | Reusable WYSIWYG content components and frontend tooling |
+| [awesome-summernote](https://github.com/eissasoubhi/awesome-summernote) | Open-source ecosystem curation and community tooling |
 
-## How I like to build
+## Engineering approach
 
-I prefer boring reliability over fashionable complexity: clear boundaries, explicit contracts, strong tests, useful CI, measurable performance, and architecture that earns its cost.
+I prefer **clear boundaries, explicit contracts, strong tests, useful CI, measurable performance, and architecture that earns its complexity**.
 
-I also use AI coding tools heavily, but I treat generated code like any other code: it still needs evidence, tests, review, and maintainable design.
+I use AI coding tools extensively, but generated code is treated like any other production code: it still needs tests, evidence, review, security checks, and maintainable design.
 
-## Elsewhere
+## Opportunities
 
-- Website: [eissa-soubhi.com](http://eissa-soubhi.com/)
-- X: [@eissa_soubhi](https://twitter.com/eissa_soubhi)
+Open to discussing **Senior Full-Stack / Tech Lead** opportunities and freelance missions in France.
+
+Languages: **French · English · Arabic**
