@@ -1,47 +1,59 @@
-<img src="/images/profile.jpg?raw=true" width="130" height="130" rel="Eissa Soubhi's profile picture" title="Eissa Soubhi's profile picture">
+# Eissa Soubhi
 
-# About me
+**Senior Full-Stack Engineer** · PHP / Symfony · TypeScript · React / Next.js · Vue / Nuxt
 
-My name is Eissa Soubhi, I'm a 27 years old full stack PHP developer with 5 years of experience from Casablanca, the kingdom of Morocco.
+I build and modernize production web platforms across backend, frontend, architecture, testing, and delivery. I care about systems that are understandable, observable, maintainable, and easy for teams to evolve.
 
+Based in **Paris, France**.
 
-## The Backend
+## What I work on
 
-On my projects, I've worked with many programming languages for the backend like ASP.NET, JEE and PHP but I chose to stick with PHP because I liked how it allows me to know and control what happens under the hood, but that comes with some security and performance costs so working with a Framework is a must.
-Unlike choosing a backend language, when I first worked with Laravel 4 years ago, I just fell in love with it instantly.
+- **Backend:** PHP 8, Symfony, API design, Doctrine, PostgreSQL/MySQL, Redis, RabbitMQ
+- **Frontend:** TypeScript, React, Next.js, Vue, Nuxt
+- **Architecture:** modular systems, DDD, hexagonal architecture, CQRS, event-driven workflows
+- **Engineering quality:** automated testing, static analysis, CI/CD, observability, performance, accessibility
+- **Delivery:** Docker, GitHub Actions, GitLab CI, cloud-native development workflows
+- **Open source:** developer tooling, AI-assisted engineering workflows, and editor extensions
 
----
-
-## The Frontend
-
-I've worked with Vue.js, Angular and React each one of those Frameworks has its pros and cons but I liked them all and I dont mind to work with anyone of them.
-Let's not forget about CSS, there is so much to tell about this language but let me conclud it by saying I mostly work with Sass and the widly popular CSS framework Bootstrap.
-
----
-
-## IDEs and Text editors
-
-Now let's talk about IDEs and Text editors, most PHP developers say PhpStome is the best IDE for PHP and it has a lot of features, I've tried it but I prefer to keep things lightweight and simple, I think you know what I'm talking about... yes exactly it's Sublime Text... Sublime Text is and always will be my prefered code editor, I dont undersand why dont they just make it the default text editor in all OSes, you ask me why? here is my answer on Quora https://www.quora.com/Which-IDE-or-text-editor-are-you-using-right-now-Why/answer/Eissa-Soubhi
-
----
-
-## Current open-source project
+## Current open-source work
 
 ### [PRTruth](https://github.com/eissasoubhi/PRTruth)
 
 **Your pull request says it is done. PRTruth checks the evidence.**
 
-PRTruth is an open-source CLI and GitHub Action that verifies pull requests against issue acceptance criteria using deterministic evidence from GitHub Actions, changed files, repository instructions, and PR completion claims.
+PRTruth is an open-source CLI and GitHub Action for evidence-based pull request verification. It compares issue acceptance criteria and PR completion claims with deterministic repository and CI evidence, then reports `PROVEN`, `FAILED`, or `UNPROVEN`.
 
 ```bash
-npx prtruth verify --issue 148 --pr 152
+npx -y prtruth@latest verify \
+  --repo owner/repository \
+  --issue 123 \
+  --pr 456 \
+  --policy report-only
 ```
 
-It reports `PROVEN`, `FAILED`, or `UNPROVEN` so reviewers can distinguish actual evidence from confident completion claims, including PRs created by AI coding agents.
+It is designed for repositories where humans, AI coding agents, and automation can produce changes faster than reviewers can manually verify every claim.
 
----
+### [AI SaaS Factory](https://github.com/eissasoubhi/ai-saas-factory)
 
-## My projects
+A production-oriented, AI-native B2B SaaS foundation built around Next.js, React, TypeScript, PostgreSQL, tenant isolation, billing, durable jobs, private files, RAG, metering, audit logs, and observability.
 
-Programming skills are like muscles, if we stop training them. soon, they will be weak/forgotten, in this case side projects are the best training to keep up with the new technologies and enhance my programming skills. and if possible, also contribute to the opensouce community.
-[Here are some of my projects](http://eissa-soubhi.com/my-projects/)
+## Selected open-source projects
+
+| Project | What it does |
+| --- | --- |
+| [PRTruth](https://github.com/eissasoubhi/PRTruth) | Evidence-based verification for pull requests and issue acceptance criteria |
+| [summernote-gallery](https://github.com/eissasoubhi/summernote-gallery) | Server-backed image gallery extension for Summernote |
+| [summernote-bricks](https://github.com/eissasoubhi/summernote-bricks) | Reusable content components for the Summernote editor |
+| [awesome-summernote](https://github.com/eissasoubhi/awesome-summernote) | Curated resources and extensions around the Summernote ecosystem |
+| [AI SaaS Factory](https://github.com/eissasoubhi/ai-saas-factory) | Production-oriented foundation for AI-native SaaS products |
+
+## How I like to build
+
+I prefer boring reliability over fashionable complexity: clear boundaries, explicit contracts, strong tests, useful CI, measurable performance, and architecture that earns its cost.
+
+I also use AI coding tools heavily, but I treat generated code like any other code: it still needs evidence, tests, review, and maintainable design.
+
+## Elsewhere
+
+- Website: [eissa-soubhi.com](http://eissa-soubhi.com/)
+- X: [@eissa_soubhi](https://twitter.com/eissa_soubhi)
