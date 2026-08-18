@@ -1,57 +1,227 @@
 ---
-layout: default
+layout: portfolio
+title: Senior Full-Stack Engineer & Tech Lead
+description: Senior Full-Stack Engineer and Tech Lead with 11+ years of experience building production web platforms with PHP, Symfony, TypeScript, React, Next.js, Vue and Nuxt.
 ---
 
-<div class="main-post-list">
-  <h2>About me</h2>
-  <p class="about">
-    I'm a {{ 'now' | date: "%Y" | minus:1991 }} years old full stack PHP developer with
-    <i>{{ 'now' | date: "%Y" | minus:2013 }} years of experience</i> from Casablanca, the kingdom of Morocco.
-  </p>
-
-  <h4><strong>The Backend</strong></h4>
-  <p>
-    On my projects, I've worked with many programming languages for the backend like ASP.NET, JEE and PHP but I chose to
-    stick with <a href="http://www.php.net/" title="PHP">PHP</a> because I liked how it allows me to know and control
-    what happens under the hood, but that comes with some security and performance costs so working with a Framework is
-    a must.<br>
-    Unlike choosing a backend language, when <i>I first worked with <a href="https://laravel.com/"
-        title="Laravel">Laravel</a> {{ 'now' | date: "%Y" | minus:2014 }} years ago</i>, I just fell in love with it
-    instantly.
-  </p>
-
-  <h4><strong>The Frontend</strong></h4>
-  <p>
-    I've worked with <a href="https://vuejs.org/" title="Vue.js">Vue.js</a>, <a href="https://angular.io/"
-      title="Angular">Angular</a> and <a href="https://reactjs.org/" title="">React</a> each one of those Frameworks has
-    its pros and cons but I liked them all and I dont mind to work with anyone of them.<br>
-    Let's not forget about CSS, there is so much to tell about this language but let me conclud it by saying I mostly
-    work with Sass and the widly popular CSS framework <a href="https://getbootstrap.com/"
-      title="Bootstrap">Bootstrap</a>.
-  </p>
-
-  <h4><strong>IDEs and Text editors</strong></h4>
-  <p>
-    Now let's talk about IDEs and Text editors, most PHP developers say PhpStome is the best IDE for PHP and it has a
-    lot of features, I've tried it but I prefer to keep things lightweight and simple, I think you know what I'm talking
-    about... yes exactly it's <a href="https://www.sublimetext.com/" title="Sublime Text">Sublime Text</a>... Sublime
-    Text is and always will be my prefered code editor, I dont undersand why dont they just make it the default text
-    editor in all OSes, you ask me why? here is my answer on Quora <a
-      href="https://www.quora.com/Which-IDE-or-text-editor-are-you-using-right-now-Why/answer/Eissa-Soubhi"
-      title="Which IDE or text editor are you using right now, Why">https://www.quora.com/Which-IDE-or-text-editor-are-you-using-right-now-Why/answer/Eissa-Soubhi</a>
-  </p>
-  <p class="my-projects">
-    {% for page in site.pages %}
-    {% if page.identifier == "my-projects" %}
-    <hr class="post-list__divider">
-    <h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ page.url }}"
-        title="{{ page.title }}">{{ page.title }}</a></h2>
-    <p class="excerpt">{{ page.content | strip_html | truncate:300 | replace: "My projects", "" }}</p>
-    <div class="post-list__meta">
-      <time datetime="{{ page.date | date: "%Y-%m-%d %H:%M" }}"
-        class="post-list__meta--date date">{{ page.date | date: "%-d %b %Y" }}</time>
+<nav class="site-nav" aria-label="Primary navigation">
+  <div class="container nav-inner">
+    <a class="brand" href="{{ site.baseurl }}/" aria-label="Eissa Soubhi home">
+      <span class="brand-mark">ES</span>
+      <span>Eissa Soubhi</span>
+    </a>
+    <div class="nav-links">
+      <a href="#expertise">Expertise</a>
+      <a href="#experience">Experience</a>
+      <a href="#work">Open source</a>
+      <a class="nav-cta" href="#contact">Contact</a>
     </div>
-    {% endif %}
-    {% endfor %}
-  </p>
-</div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">Senior Full-Stack Engineer · Tech Lead</p>
+      <h1>I build web products that <span>survive production.</span></h1>
+      <p class="hero-copy">
+        11+ years designing, modernizing and shipping production platforms across backend, frontend and architecture.
+        Strongest in <strong>PHP / Symfony</strong>, with modern <strong>TypeScript, React / Next.js and Vue / Nuxt</strong> frontends.
+      </p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#work">See my work</a>
+        <a class="button button-secondary" href="mailto:{{ site.author.email }}">Get in touch</a>
+        <a class="button button-secondary" href="https://github.com/{{ site.author.github_username }}" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </div>
+    </div>
+
+    <aside class="hero-card" aria-label="Quick profile">
+      <div class="profile-row">
+        <img class="profile-photo" src="{{ site.baseurl }}/images/profile.jpg" alt="Portrait of Eissa Soubhi">
+        <div>
+          <div class="profile-name">Eissa Soubhi</div>
+          <div class="profile-meta">Paris area, France</div>
+        </div>
+      </div>
+      <div class="quick-facts">
+        <div class="fact"><strong>11+</strong><span>years of professional software engineering</span></div>
+        <div class="fact"><strong>Full stack</strong><span>backend, frontend, architecture and delivery</span></div>
+        <div class="fact"><strong>Symfony 8</strong><span>Certified Developer</span></div>
+        <div class="fact"><strong>FR · EN · AR</strong><span>French, English and Arabic</span></div>
+      </div>
+    </aside>
+  </div>
+</header>
+
+<main id="main">
+  <section id="expertise">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-kicker">What I bring</p>
+        <div>
+          <h2>Senior engineering across the whole web stack.</h2>
+          <p>I work where product needs meet technical constraints: reliable APIs, fast interfaces, maintainable architecture, good delivery pipelines and pragmatic modernization.</p>
+        </div>
+      </div>
+
+      <div class="capabilities">
+        <article class="capability">
+          <span class="capability-index">01</span>
+          <h3>Backend & architecture</h3>
+          <p>PHP 8, Symfony, Doctrine, APIs, PostgreSQL/MySQL, Redis, RabbitMQ, asynchronous processing, DDD, hexagonal architecture and CQRS where they actually earn their cost.</p>
+        </article>
+        <article class="capability">
+          <span class="capability-index">02</span>
+          <h3>Frontend & product</h3>
+          <p>TypeScript, React, Next.js, Vue and Nuxt with SSR/SSG, component-driven UI, accessibility, SEO, performance and Core Web Vitals in mind.</p>
+        </article>
+        <article class="capability">
+          <span class="capability-index">03</span>
+          <h3>Quality & delivery</h3>
+          <p>Automated testing, static analysis, code review, Docker, CI/CD, GitHub Actions, GitLab CI, Jenkins, observability and production troubleshooting.</p>
+        </article>
+      </div>
+
+      <div class="stack-row" aria-label="Core technologies">
+        <span class="pill">PHP 8</span><span class="pill">Symfony</span><span class="pill">TypeScript</span><span class="pill">React</span><span class="pill">Next.js</span><span class="pill">Vue 3</span><span class="pill">Nuxt 3</span><span class="pill">PostgreSQL</span><span class="pill">MySQL</span><span class="pill">Redis</span><span class="pill">RabbitMQ</span><span class="pill">Docker</span><span class="pill">GitHub Actions</span><span class="pill">AWS / GCP</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-soft" id="experience">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-kicker">Experience</p>
+        <div>
+          <h2>Production experience, not tutorial architecture.</h2>
+          <p>I have worked on high-traffic media, automotive, real-estate, e-commerce and business platforms, from feature delivery to technical leadership and modernization.</p>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <article class="role">
+          <div>
+            <div class="role-company">IDGARAGES</div>
+            <div class="role-period">Tech Lead Full-Stack</div>
+          </div>
+          <div>
+            <h3>Modern full-stack product delivery</h3>
+            <p>Led and contributed across Symfony services and Nuxt/Vue frontends, event-driven workflows, search, caching, observability and team delivery on a large automotive marketplace.</p>
+            <div class="role-tags"><span>Symfony 6.4</span><span>PHP 8.3</span><span>Nuxt 3</span><span>Vue 3</span><span>RabbitMQ</span><span>Redis</span><span>Elasticsearch</span></div>
+          </div>
+        </article>
+
+        <article class="role">
+          <div>
+            <div class="role-company">France Télévisions</div>
+            <div class="role-period">Senior Full-Stack Engineer</div>
+          </div>
+          <div>
+            <h3>High-traffic media engineering</h3>
+            <p>Worked on france.tv user journeys and editorial/player experiences with Symfony, PHP, TypeScript and Twig, with strong attention to accessibility, frontend quality and performance.</p>
+            <div class="role-tags"><span>Symfony</span><span>PHP 8</span><span>TypeScript</span><span>Twig</span><span>Accessibility</span><span>Performance</span></div>
+          </div>
+        </article>
+
+        <article class="role">
+          <div>
+            <div class="role-company">Nexity</div>
+            <div class="role-period">Full-Stack Engineer</div>
+          </div>
+          <div>
+            <h3>Search, content and modern frontend</h3>
+            <p>Built and modernized real-estate web experiences around Symfony, Vue/Nuxt, Algolia and CMS integrations, including localization, structured data and reusable UI.</p>
+            <div class="role-tags"><span>Symfony</span><span>Vue</span><span>Nuxt</span><span>Algolia</span><span>Sulu CMS</span><span>SEO</span></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="brand-cloud" aria-label="Other environments">
+        <span class="brand-chip">Caisse des Dépôts</span>
+        <span class="brand-chip">Edenred</span>
+        <span class="brand-chip">Orange Business</span>
+        <span class="brand-chip">E-commerce</span>
+        <span class="brand-chip">Public sector</span>
+        <span class="brand-chip">Media</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-dark" id="work">
+    <div class="container">
+      <div class="section-heading">
+        <p class="section-kicker">Open source</p>
+        <div>
+          <h2>I build tools, not just portfolio screenshots.</h2>
+          <p>My current public work explores developer tooling, AI-assisted engineering, modern SaaS architecture and the editor ecosystem I have contributed to for years.</p>
+        </div>
+      </div>
+
+      <div class="projects">
+        <a class="project-card" href="https://github.com/eissasoubhi/PRTruth" target="_blank" rel="noreferrer">
+          <span class="project-number">01 · FLAGSHIP OSS</span>
+          <h3>PRTruth ↗</h3>
+          <p>An evidence-based CLI and GitHub Action that checks whether pull-request completion claims are actually supported by repository and CI evidence.</p>
+          <div class="project-tech">TypeScript · GitHub Actions · Developer tooling · AI workflows</div>
+        </a>
+
+        <a class="project-card" href="https://github.com/eissasoubhi/ai-saas-factory" target="_blank" rel="noreferrer">
+          <span class="project-number">02 · CURRENT BUILD</span>
+          <h3>AI SaaS Factory ↗</h3>
+          <p>A production-oriented B2B SaaS foundation covering multi-tenancy, billing, durable jobs, private files, RAG, metering, audit logs and observability.</p>
+          <div class="project-tech">Next.js · React · TypeScript · PostgreSQL · Stripe · RAG</div>
+        </a>
+
+        <a class="project-card" href="https://github.com/eissasoubhi/summernote-bricks" target="_blank" rel="noreferrer">
+          <span class="project-number">03 · OSS HISTORY</span>
+          <h3>Summernote Bricks ↗</h3>
+          <p>A reusable component system for the Summernote WYSIWYG editor, part of a broader set of open-source editor plugins and tooling.</p>
+          <div class="project-tech">JavaScript · WYSIWYG · Plugin architecture · Open source</div>
+        </a>
+      </div>
+
+      <div class="hero-actions">
+        <a class="button button-secondary" href="https://github.com/{{ site.author.github_username }}?tab=repositories" target="_blank" rel="noreferrer">Explore all repositories ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container approach-grid">
+      <div class="approach-copy">
+        <p class="section-kicker">Engineering approach</p>
+        <h2>Architecture should make delivery easier, not make diagrams prettier.</h2>
+        <p>I like clear boundaries, explicit contracts, strong tests, useful CI and measurable performance. I use AI coding tools extensively, but generated code still needs evidence, review, security and maintainable design.</p>
+      </div>
+      <div class="principles">
+        <div class="principle"><strong>Pragmatic modernization</strong><span>Improve legacy systems incrementally without creating a rewrite-shaped business risk.</span></div>
+        <div class="principle"><strong>Evidence over confidence</strong><span>Tests, observability and CI should make technical claims verifiable.</span></div>
+        <div class="principle"><strong>Complexity has a budget</strong><span>DDD, CQRS and distributed systems are tools, not personality traits.</span></div>
+        <div class="principle"><strong>Product is part of engineering</strong><span>Performance, accessibility, SEO and maintainability matter as much as the happy-path feature.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-soft" id="contact">
+    <div class="container">
+      <div class="contact-card">
+        <div>
+          <p class="eyebrow">Let’s work together</p>
+          <h2>Looking for a senior full-stack engineer or tech lead?</h2>
+          <p>Open to discussing Senior Full-Stack / Tech Lead opportunities and freelance missions in France. I can work across backend, frontend and architecture without losing sight of delivery.</p>
+        </div>
+        <div class="contact-links">
+          <a class="button button-primary" href="mailto:{{ site.author.email }}">Email me</a>
+          <a class="button button-secondary" href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© {{ 'now' | date: '%Y' }} Eissa Soubhi · Senior Full-Stack Engineer</span>
+    <span><a href="https://github.com/{{ site.author.github_username }}">GitHub</a> · <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}">LinkedIn</a> · <a href="mailto:{{ site.author.email }}">Email</a></span>
+  </div>
+</footer>
