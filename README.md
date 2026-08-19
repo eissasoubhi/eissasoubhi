@@ -16,6 +16,6 @@ I work end-to-end across backend, frontend, architecture, quality, performance a
 - **Delivery:** Docker, GitHub Actions, GitLab CI, Jenkins, AWS/GCP exposure, production troubleshooting
 - **Product engineering:** SEO, accessibility, Core Web Vitals, maintainability and pragmatic modernization of legacy systems
 
-**Certifications:** Symfony 8 Certified Developer · AWS Certified DevOps Engineer – Professional
+**Certifications:** [Symfony 8 Certified Developer](https://connect.symfony.com/profile/s_eissa) · [AWS Certified DevOps Engineer – Professional](https://www.credly.com/badges/69093138-1cb3-4245-aa38-6cab7da92d39/public_url)
 
 [Portfolio](https://eissasoubhi.github.io/eissasoubhi/) · [LinkedIn](https://linkedin.com/in/aissa-soubhi)
