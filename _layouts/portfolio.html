@@ -1,40 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <title>{{ page.title | default: site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description | escape }}">
   <meta name="author" content="{{ site.author.name }}">
+  <meta name="robots" content="index,follow,max-image-preview:large">
   <meta name="theme-color" content="#ffffff">
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}/">
+  <link rel="alternate" hreflang="fr" href="{{ site.url }}{{ site.baseurl }}/fr/">
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}/">
+
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.title | escape }}">
   <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
   <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/images/profile.jpg">
+  <meta property="og:locale" content="{% if page.lang == 'fr' %}fr_FR{% else %}en_US{% endif %}">
+  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ site.social_image }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Aissa SOUBHI — Senior Full-Stack Engineer">
+
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <meta name="twitter:title" content="{{ page.title | default: site.title | escape }}">
+  <meta name="twitter:description" content="{{ page.description | default: site.description | escape }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}{{ site.social_image }}">
+
   <link rel="icon" href="{{ site.baseurl }}/images/favicons/favicon-32x32.png" sizes="32x32">
   <link rel="stylesheet" href="{{ site.baseurl }}/css/portfolio.css?{{ site.time | date: '%s' }}">
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Eissa Soubhi",
+    "name": "Aissa SOUBHI",
     "url": "{{ site.url }}{{ site.baseurl }}/",
     "image": "{{ site.url }}{{ site.baseurl }}/images/profile.jpg",
-    "jobTitle": "Senior Full-Stack Engineer / Tech Lead",
+    "jobTitle": "Senior Full-Stack Engineer",
     "email": "mailto:{{ site.author.email }}",
     "sameAs": [
       "https://github.com/{{ site.author.github_username }}",
-      "https://www.linkedin.com/in/{{ site.author.linkedin_username }}"
+      "https://linkedin.com/in/{{ site.author.linkedin_username }}"
     ],
-    "knowsAbout": ["PHP", "Symfony", "TypeScript", "React", "Next.js", "Vue", "Nuxt", "Software Architecture", "CI/CD"]
+    "knowsAbout": [
+      "PHP", "Symfony", "TypeScript", "React", "Next.js", "Vue", "Nuxt",
+      "Software Architecture", "CI/CD", "Accessibility", "Web Performance"
+    ],
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Symfony 8 Certified Developer",
+        "credentialCategory": "Professional certification"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "AWS Certified DevOps Engineer – Professional",
+        "credentialCategory": "Professional certification"
+      }
+    ]
   }
   </script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">{% if page.lang == 'fr' %}Aller au contenu{% else %}Skip to content{% endif %}</a>
   {{ content }}
 </body>
 </html>
