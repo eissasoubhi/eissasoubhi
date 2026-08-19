@@ -1,16 +1,16 @@
 # Site settings
-title: Eissa Soubhi
-description: 'Senior Full-Stack Engineer / Tech Lead · PHP, Symfony, TypeScript, React, Next.js, Vue and Nuxt · 11+ years building production web platforms.'
+title: Aissa SOUBHI
+description: 'Senior Full-Stack Engineer · PHP, Symfony, TypeScript, React, Next.js, Vue and Nuxt · 11+ years building and modernizing production web platforms.'
 url: 'https://eissasoubhi.github.io'
 baseurl: '/eissasoubhi'
+lang: en
+social_image: '/images/portfolio-social.png'
 
 author:
-  name: 'Eissa Soubhi'
+  name: 'Aissa SOUBHI'
   email: eissa.soubhi@gmail.com
-  twitter_username: eissa_soubhi
   github_username: eissasoubhi
   linkedin_username: aissa-soubhi
-  skype_username: eissa.soubhi
 
 defaults:
   -
