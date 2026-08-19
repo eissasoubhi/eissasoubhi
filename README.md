@@ -1,11 +1,11 @@
-# Eissa Soubhi
+# Aissa SOUBHI
 
-**Senior Full-Stack Engineer / Tech Lead**  
+**Senior Full-Stack Engineer**  
 PHP 8 · Symfony · TypeScript · React / Next.js · Vue / Nuxt
 
 **11+ years building and modernizing production web platforms.** Based in France, Paris area.
 
-I work end-to-end across backend, frontend, architecture, quality, performance, and delivery. My strongest background is in PHP/Symfony, complemented by modern TypeScript frontends and production experience on high-traffic media, e-commerce, marketplace, and business platforms.
+I work end-to-end across backend, frontend, architecture, quality, performance and delivery. My strongest background is in PHP/Symfony, complemented by modern TypeScript frontends and production experience across media, e-commerce, business platforms and digital products.
 
 ## What I bring
 
@@ -14,9 +14,8 @@ I work end-to-end across backend, frontend, architecture, quality, performance, 
 - **Architecture:** DDD, hexagonal architecture, CQRS, event-driven systems, modular and API-first design
 - **Quality:** automated testing, static analysis, code review, CI/CD, observability, performance engineering
 - **Delivery:** Docker, GitHub Actions, GitLab CI, Jenkins, AWS/GCP exposure, production troubleshooting
-- **Product engineering:** SEO, accessibility, Core Web Vitals, maintainability, pragmatic modernization of legacy systems
-- **Leadership:** technical design, mentoring, code quality standards, delivery support, collaboration with product and engineering teams
+- **Product engineering:** SEO, accessibility, Core Web Vitals, maintainability and pragmatic modernization of legacy systems
 
-**Symfony 8 Certified Developer.**
+**Certifications:** Symfony 8 Certified Developer · AWS Certified DevOps Engineer – Professional
 
-
+[Portfolio](https://eissasoubhi.github.io/eissasoubhi/) · [LinkedIn](https://linkedin.com/in/aissa-soubhi)
