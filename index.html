@@ -40,7 +40,10 @@ description: Senior Full-Stack Engineer and Tech Lead with 11+ years of experien
       <dl class="profile-facts">
         <div><dt>Experience</dt><dd>11+ years</dd></div>
         <div><dt>Role</dt><dd>Senior / Tech Lead</dd></div>
-        <div><dt>Certification</dt><dd>Symfony 8</dd></div>
+        <div>
+          <dt>Certifications</dt>
+          <dd class="credential-list"><span>Symfony 8</span><span>AWS DevOps</span></dd>
+        </div>
         <div><dt>Languages</dt><dd>FR · EN · AR</dd></div>
       </dl>
       <div class="profile-links">
@@ -133,22 +136,26 @@ description: Senior Full-Stack Engineer and Tech Lead with 11+ years of experien
     <div class="container">
       <div class="section-heading">
         <p class="section-kicker">Selected work</p>
-        <h2>Open-source projects that reflect how I build.</h2>
+        <h2>Open-source work, from developer tooling to editor plugins.</h2>
       </div>
 
       <div class="projects">
-        <a class="project-card" href="https://github.com/eissasoubhi/PRTruth" target="_blank" rel="noreferrer">
-          <span class="project-label">Developer tooling</span>
-          <h3>PRTruth ↗</h3>
-          <p>CLI and GitHub Action for evidence-based pull-request verification against issue acceptance criteria and repository signals.</p>
-          <span class="project-tech">TypeScript · GitHub Actions · CI · AI workflows</span>
+        <a class="project-card project-card-featured" href="https://github.com/eissasoubhi/PRTruth" target="_blank" rel="noreferrer">
+          <div class="project-heading">
+            <span class="project-label">Developer tooling</span>
+            <h3>PRTruth ↗</h3>
+          </div>
+          <div class="project-body">
+            <p>CLI and GitHub Action for evidence-based pull-request verification against issue acceptance criteria and repository signals.</p>
+            <span class="project-tech">TypeScript · GitHub Actions · CI · AI workflows</span>
+          </div>
         </a>
 
-        <a class="project-card" href="https://github.com/eissasoubhi/ai-saas-factory" target="_blank" rel="noreferrer">
-          <span class="project-label">Full-stack architecture</span>
-          <h3>AI SaaS Factory ↗</h3>
-          <p>Production-oriented B2B SaaS foundation with multi-tenancy, billing, durable jobs, private files, RAG, metering and observability.</p>
-          <span class="project-tech">Next.js · React · TypeScript · PostgreSQL · Stripe · RAG</span>
+        <a class="project-card" href="https://github.com/eissasoubhi/summernote-gallery" target="_blank" rel="noreferrer">
+          <span class="project-label">Editor tooling</span>
+          <h3>Summernote Gallery ↗</h3>
+          <p>A Summernote gallery plugin that adds a modal image browser for selecting server-hosted images inside the editor.</p>
+          <span class="project-tech">TypeScript · Summernote · Plugin architecture</span>
         </a>
 
         <a class="project-card" href="https://github.com/eissasoubhi/summernote-bricks" target="_blank" rel="noreferrer">
@@ -178,14 +185,18 @@ description: Senior Full-Stack Engineer and Tech Lead with 11+ years of experien
     </div>
   </section>
 
-  <section id="contact">
-    <div class="container contact-section">
-      <p class="section-kicker">Contact</p>
-      <h2>Open to Senior Full-Stack and Tech Lead opportunities.</h2>
-      <p>Available to discuss permanent roles and freelance missions in France.</p>
-      <div class="contact-links">
-        <a class="button button-primary" href="mailto:{{ site.author.email }}">Email me</a>
-        <a class="text-link" href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+  <section id="contact" class="contact-wrap">
+    <div class="container contact-grid">
+      <div class="contact-heading">
+        <p class="section-kicker">Contact</p>
+        <h2>Open to Senior Full-Stack opportunities.</h2>
+      </div>
+      <div class="contact-body">
+        <p>Available to discuss permanent roles and freelance missions in France.</p>
+        <div class="contact-links">
+          <a class="button button-primary" href="mailto:{{ site.author.email }}">Email me</a>
+          <a class="text-link" href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        </div>
       </div>
     </div>
   </section>
@@ -194,6 +205,6 @@ description: Senior Full-Stack Engineer and Tech Lead with 11+ years of experien
 <footer class="site-footer">
   <div class="container footer-inner">
     <span>© {{ 'now' | date: '%Y' }} Eissa Soubhi</span>
-    <span>Senior Full-Stack Engineer · Tech Lead</span>
+    <span>Senior Full-Stack Engineer</span>
   </div>
 </footer>
