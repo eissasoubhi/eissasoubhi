@@ -1,9 +1,17 @@
 ---
-layout: default
-title: My CV
-identifier: my-cv
-class: cv
-lang: en
+layout: null
 ---
-
-{% include templates/my-cv.html %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="0; url={{ site.baseurl }}/#experience">
+  <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}/#experience">
+  <title>Experience · Eissa Soubhi</title>
+</head>
+<body>
+  <p>My current experience is now presented on the <a href="{{ site.baseurl }}/#experience">portfolio homepage</a>.</p>
+  <script>window.location.replace('{{ site.baseurl }}/#experience');</script>
+</body>
+</html>
