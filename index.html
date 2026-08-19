@@ -6,48 +6,46 @@ description: Senior Full-Stack Engineer and Tech Lead with 11+ years of experien
 
 <nav class="site-nav" aria-label="Primary navigation">
   <div class="container nav-inner">
-    <a class="brand" href="{{ site.baseurl }}/" aria-label="Eissa Soubhi home">
-      <span class="brand-mark">ES</span>
-      <span>Eissa Soubhi</span>
-    </a>
+    <a class="brand" href="{{ site.baseurl }}/">Eissa Soubhi</a>
     <div class="nav-links">
       <a href="#expertise">Expertise</a>
       <a href="#experience">Experience</a>
-      <a href="#work">Open source</a>
-      <a class="nav-cta" href="#contact">Contact</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
     </div>
   </div>
 </nav>
 
 <header class="hero">
   <div class="container hero-grid">
-    <div>
+    <div class="hero-main">
       <p class="eyebrow">Senior Full-Stack Engineer · Tech Lead</p>
-      <h1>I build web products that <span>survive production.</span></h1>
+      <h1>Building reliable web products, from architecture to delivery.</h1>
       <p class="hero-copy">
-        11+ years designing, modernizing and shipping production platforms across backend, frontend and architecture.
-        Strongest in <strong>PHP / Symfony</strong>, with modern <strong>TypeScript, React / Next.js and Vue / Nuxt</strong> frontends.
+        11+ years of experience across backend, frontend and technical leadership.
+        Strong focus on <strong>PHP / Symfony</strong>, with modern <strong>TypeScript, React / Next.js and Vue / Nuxt</strong> frontends.
       </p>
       <div class="hero-actions">
-        <a class="button button-primary" href="#work">See my work</a>
-        <a class="button button-secondary" href="mailto:{{ site.author.email }}">Get in touch</a>
-        <a class="button button-secondary" href="https://github.com/{{ site.author.github_username }}" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a class="button button-primary" href="#work">View selected work</a>
+        <a class="text-link" href="mailto:{{ site.author.email }}">Contact me ↗</a>
       </div>
     </div>
 
-    <aside class="hero-card" aria-label="Quick profile">
-      <div class="profile-row">
-        <img class="profile-photo" src="{{ site.baseurl }}/images/profile.jpg" alt="Portrait of Eissa Soubhi">
-        <div>
-          <div class="profile-name">Eissa Soubhi</div>
-          <div class="profile-meta">Paris area, France</div>
-        </div>
+    <aside class="profile-summary" aria-label="Quick profile">
+      <img class="profile-photo" src="{{ site.baseurl }}/images/profile.jpg" alt="Portrait of Eissa Soubhi">
+      <div class="profile-details">
+        <strong>Eissa Soubhi</strong>
+        <span>Paris area, France</span>
       </div>
-      <div class="quick-facts">
-        <div class="fact"><strong>11+</strong><span>years of professional software engineering</span></div>
-        <div class="fact"><strong>Full stack</strong><span>backend, frontend, architecture and delivery</span></div>
-        <div class="fact"><strong>Symfony 8</strong><span>Certified Developer</span></div>
-        <div class="fact"><strong>FR · EN · AR</strong><span>French, English and Arabic</span></div>
+      <dl class="profile-facts">
+        <div><dt>Experience</dt><dd>11+ years</dd></div>
+        <div><dt>Role</dt><dd>Senior / Tech Lead</dd></div>
+        <div><dt>Certification</dt><dd>Symfony 8</dd></div>
+        <div><dt>Languages</dt><dd>FR · EN · AR</dd></div>
+      </dl>
+      <div class="profile-links">
+        <a href="https://github.com/{{ site.author.github_username }}" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" target="_blank" rel="noreferrer">LinkedIn ↗</a>
       </div>
     </aside>
   </div>
@@ -57,163 +55,137 @@ description: Senior Full-Stack Engineer and Tech Lead with 11+ years of experien
   <section id="expertise">
     <div class="container">
       <div class="section-heading">
-        <p class="section-kicker">What I bring</p>
-        <div>
-          <h2>Senior engineering across the whole web stack.</h2>
-          <p>I work where product needs meet technical constraints: reliable APIs, fast interfaces, maintainable architecture, good delivery pipelines and pragmatic modernization.</p>
-        </div>
+        <p class="section-kicker">Expertise</p>
+        <h2>Full-stack engineering with a strong backend foundation.</h2>
       </div>
 
       <div class="capabilities">
         <article class="capability">
-          <span class="capability-index">01</span>
           <h3>Backend & architecture</h3>
-          <p>PHP 8, Symfony, Doctrine, APIs, PostgreSQL/MySQL, Redis, RabbitMQ, asynchronous processing, DDD, hexagonal architecture and CQRS where they actually earn their cost.</p>
+          <p>PHP 8, Symfony, Doctrine, REST APIs, PostgreSQL/MySQL, Redis, RabbitMQ, DDD, hexagonal architecture, CQRS and event-driven systems.</p>
         </article>
         <article class="capability">
-          <span class="capability-index">02</span>
           <h3>Frontend & product</h3>
-          <p>TypeScript, React, Next.js, Vue and Nuxt with SSR/SSG, component-driven UI, accessibility, SEO, performance and Core Web Vitals in mind.</p>
+          <p>TypeScript, React, Next.js, Vue, Nuxt, SSR/SSG, reusable UI, accessibility, SEO, performance and Core Web Vitals.</p>
         </article>
         <article class="capability">
-          <span class="capability-index">03</span>
           <h3>Quality & delivery</h3>
-          <p>Automated testing, static analysis, code review, Docker, CI/CD, GitHub Actions, GitLab CI, Jenkins, observability and production troubleshooting.</p>
+          <p>Automated testing, static analysis, code review, Docker, GitHub Actions, GitLab CI, Jenkins, observability and production troubleshooting.</p>
         </article>
       </div>
 
       <div class="stack-row" aria-label="Core technologies">
-        <span class="pill">PHP 8</span><span class="pill">Symfony</span><span class="pill">TypeScript</span><span class="pill">React</span><span class="pill">Next.js</span><span class="pill">Vue 3</span><span class="pill">Nuxt 3</span><span class="pill">PostgreSQL</span><span class="pill">MySQL</span><span class="pill">Redis</span><span class="pill">RabbitMQ</span><span class="pill">Docker</span><span class="pill">GitHub Actions</span><span class="pill">AWS / GCP</span>
+        <span>PHP 8</span><span>Symfony</span><span>TypeScript</span><span>React</span><span>Next.js</span><span>Vue 3</span><span>Nuxt 3</span><span>PostgreSQL</span><span>Redis</span><span>RabbitMQ</span><span>Docker</span><span>AWS / GCP</span>
       </div>
     </div>
   </section>
 
-  <section class="section-soft" id="experience">
+  <section class="section-muted" id="experience">
     <div class="container">
       <div class="section-heading">
         <p class="section-kicker">Experience</p>
-        <div>
-          <h2>Production experience, not tutorial architecture.</h2>
-          <p>I have worked on high-traffic media, automotive, real-estate, e-commerce and business platforms, from feature delivery to technical leadership and modernization.</p>
-        </div>
+        <h2>Selected production environments.</h2>
       </div>
 
       <div class="timeline">
         <article class="role">
-          <div>
-            <div class="role-company">IDGARAGES</div>
-            <div class="role-period">Tech Lead Full-Stack</div>
+          <div class="role-meta">
+            <strong>IDGARAGES</strong>
+            <span>Tech Lead Full-Stack</span>
           </div>
-          <div>
-            <h3>Modern full-stack product delivery</h3>
-            <p>Led and contributed across Symfony services and Nuxt/Vue frontends, event-driven workflows, search, caching, observability and team delivery on a large automotive marketplace.</p>
-            <div class="role-tags"><span>Symfony 6.4</span><span>PHP 8.3</span><span>Nuxt 3</span><span>Vue 3</span><span>RabbitMQ</span><span>Redis</span><span>Elasticsearch</span></div>
-          </div>
-        </article>
-
-        <article class="role">
-          <div>
-            <div class="role-company">France Télévisions</div>
-            <div class="role-period">Senior Full-Stack Engineer</div>
-          </div>
-          <div>
-            <h3>High-traffic media engineering</h3>
-            <p>Worked on france.tv user journeys and editorial/player experiences with Symfony, PHP, TypeScript and Twig, with strong attention to accessibility, frontend quality and performance.</p>
-            <div class="role-tags"><span>Symfony</span><span>PHP 8</span><span>TypeScript</span><span>Twig</span><span>Accessibility</span><span>Performance</span></div>
+          <div class="role-content">
+            <h3>Automotive marketplace</h3>
+            <p>Symfony services and Nuxt/Vue frontends, event-driven workflows, Elasticsearch, Redis, observability and team delivery at scale.</p>
+            <span class="role-stack">Symfony 6.4 · PHP 8.3 · Nuxt 3 · Vue 3 · RabbitMQ · Elasticsearch</span>
           </div>
         </article>
 
         <article class="role">
-          <div>
-            <div class="role-company">Nexity</div>
-            <div class="role-period">Full-Stack Engineer</div>
+          <div class="role-meta">
+            <strong>France Télévisions</strong>
+            <span>Senior Full-Stack Engineer</span>
           </div>
-          <div>
-            <h3>Search, content and modern frontend</h3>
-            <p>Built and modernized real-estate web experiences around Symfony, Vue/Nuxt, Algolia and CMS integrations, including localization, structured data and reusable UI.</p>
-            <div class="role-tags"><span>Symfony</span><span>Vue</span><span>Nuxt</span><span>Algolia</span><span>Sulu CMS</span><span>SEO</span></div>
+          <div class="role-content">
+            <h3>High-traffic media platform</h3>
+            <p>france.tv editorial and player journeys with Symfony, PHP, TypeScript and Twig, with a strong focus on accessibility and frontend performance.</p>
+            <span class="role-stack">Symfony · PHP 8 · TypeScript · Twig · Accessibility · Performance</span>
+          </div>
+        </article>
+
+        <article class="role">
+          <div class="role-meta">
+            <strong>Nexity</strong>
+            <span>Full-Stack Engineer</span>
+          </div>
+          <div class="role-content">
+            <h3>Real-estate digital products</h3>
+            <p>Symfony, Vue/Nuxt, Algolia and CMS integrations for search, localization, structured data and reusable product interfaces.</p>
+            <span class="role-stack">Symfony · Vue · Nuxt · Algolia · Sulu CMS · SEO</span>
           </div>
         </article>
       </div>
 
-      <div class="brand-cloud" aria-label="Other environments">
-        <span class="brand-chip">Caisse des Dépôts</span>
-        <span class="brand-chip">Edenred</span>
-        <span class="brand-chip">Orange Business</span>
-        <span class="brand-chip">E-commerce</span>
-        <span class="brand-chip">Public sector</span>
-        <span class="brand-chip">Media</span>
-      </div>
+      <p class="other-environments">Also worked with Caisse des Dépôts, Edenred, Orange Business and teams across e-commerce, public services and media.</p>
     </div>
   </section>
 
-  <section class="section-dark" id="work">
+  <section id="work">
     <div class="container">
       <div class="section-heading">
-        <p class="section-kicker">Open source</p>
-        <div>
-          <h2>I build tools, not just portfolio screenshots.</h2>
-          <p>My current public work explores developer tooling, AI-assisted engineering, modern SaaS architecture and the editor ecosystem I have contributed to for years.</p>
-        </div>
+        <p class="section-kicker">Selected work</p>
+        <h2>Open-source projects that reflect how I build.</h2>
       </div>
 
       <div class="projects">
         <a class="project-card" href="https://github.com/eissasoubhi/PRTruth" target="_blank" rel="noreferrer">
-          <span class="project-number">01 · FLAGSHIP OSS</span>
+          <span class="project-label">Developer tooling</span>
           <h3>PRTruth ↗</h3>
-          <p>An evidence-based CLI and GitHub Action that checks whether pull-request completion claims are actually supported by repository and CI evidence.</p>
-          <div class="project-tech">TypeScript · GitHub Actions · Developer tooling · AI workflows</div>
+          <p>CLI and GitHub Action for evidence-based pull-request verification against issue acceptance criteria and repository signals.</p>
+          <span class="project-tech">TypeScript · GitHub Actions · CI · AI workflows</span>
         </a>
 
         <a class="project-card" href="https://github.com/eissasoubhi/ai-saas-factory" target="_blank" rel="noreferrer">
-          <span class="project-number">02 · CURRENT BUILD</span>
+          <span class="project-label">Full-stack architecture</span>
           <h3>AI SaaS Factory ↗</h3>
-          <p>A production-oriented B2B SaaS foundation covering multi-tenancy, billing, durable jobs, private files, RAG, metering, audit logs and observability.</p>
-          <div class="project-tech">Next.js · React · TypeScript · PostgreSQL · Stripe · RAG</div>
+          <p>Production-oriented B2B SaaS foundation with multi-tenancy, billing, durable jobs, private files, RAG, metering and observability.</p>
+          <span class="project-tech">Next.js · React · TypeScript · PostgreSQL · Stripe · RAG</span>
         </a>
 
         <a class="project-card" href="https://github.com/eissasoubhi/summernote-bricks" target="_blank" rel="noreferrer">
-          <span class="project-number">03 · OSS HISTORY</span>
+          <span class="project-label">Open-source history</span>
           <h3>Summernote Bricks ↗</h3>
-          <p>A reusable component system for the Summernote WYSIWYG editor, part of a broader set of open-source editor plugins and tooling.</p>
-          <div class="project-tech">JavaScript · WYSIWYG · Plugin architecture · Open source</div>
+          <p>Reusable content components for the Summernote WYSIWYG editor and part of a broader editor-plugin ecosystem.</p>
+          <span class="project-tech">JavaScript · WYSIWYG · Plugin architecture</span>
         </a>
       </div>
 
-      <div class="hero-actions">
-        <a class="button button-secondary" href="https://github.com/{{ site.author.github_username }}?tab=repositories" target="_blank" rel="noreferrer">Explore all repositories ↗</a>
-      </div>
+      <a class="text-link work-link" href="https://github.com/{{ site.author.github_username }}?tab=repositories" target="_blank" rel="noreferrer">View all repositories ↗</a>
     </div>
   </section>
 
-  <section>
+  <section class="section-muted">
     <div class="container approach-grid">
-      <div class="approach-copy">
-        <p class="section-kicker">Engineering approach</p>
-        <h2>Architecture should make delivery easier, not make diagrams prettier.</h2>
-        <p>I like clear boundaries, explicit contracts, strong tests, useful CI and measurable performance. I use AI coding tools extensively, but generated code still needs evidence, review, security and maintainable design.</p>
+      <div>
+        <p class="section-kicker">Approach</p>
+        <h2>Pragmatic engineering, built for teams and production.</h2>
       </div>
       <div class="principles">
-        <div class="principle"><strong>Pragmatic modernization</strong><span>Improve legacy systems incrementally without creating a rewrite-shaped business risk.</span></div>
-        <div class="principle"><strong>Evidence over confidence</strong><span>Tests, observability and CI should make technical claims verifiable.</span></div>
-        <div class="principle"><strong>Complexity has a budget</strong><span>DDD, CQRS and distributed systems are tools, not personality traits.</span></div>
-        <div class="principle"><strong>Product is part of engineering</strong><span>Performance, accessibility, SEO and maintainability matter as much as the happy-path feature.</span></div>
+        <p><strong>Clear architecture.</strong> Boundaries and patterns should reduce friction, not add ceremony.</p>
+        <p><strong>Quality by default.</strong> Tests, CI and observability make changes safer and easier to review.</p>
+        <p><strong>Incremental modernization.</strong> Improve legacy systems without turning every problem into a rewrite.</p>
+        <p><strong>Product awareness.</strong> Performance, accessibility and maintainability are part of engineering quality.</p>
       </div>
     </div>
   </section>
 
-  <section class="section-soft" id="contact">
-    <div class="container">
-      <div class="contact-card">
-        <div>
-          <p class="eyebrow">Let’s work together</p>
-          <h2>Looking for a senior full-stack engineer or tech lead?</h2>
-          <p>Open to discussing Senior Full-Stack / Tech Lead opportunities and freelance missions in France. I can work across backend, frontend and architecture without losing sight of delivery.</p>
-        </div>
-        <div class="contact-links">
-          <a class="button button-primary" href="mailto:{{ site.author.email }}">Email me</a>
-          <a class="button button-secondary" href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-        </div>
+  <section id="contact">
+    <div class="container contact-section">
+      <p class="section-kicker">Contact</p>
+      <h2>Open to Senior Full-Stack and Tech Lead opportunities.</h2>
+      <p>Available to discuss permanent roles and freelance missions in France.</p>
+      <div class="contact-links">
+        <a class="button button-primary" href="mailto:{{ site.author.email }}">Email me</a>
+        <a class="text-link" href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" target="_blank" rel="noreferrer">LinkedIn ↗</a>
       </div>
     </div>
   </section>
@@ -221,7 +193,7 @@ description: Senior Full-Stack Engineer and Tech Lead with 11+ years of experien
 
 <footer class="site-footer">
   <div class="container footer-inner">
-    <span>© {{ 'now' | date: '%Y' }} Eissa Soubhi · Senior Full-Stack Engineer</span>
-    <span><a href="https://github.com/{{ site.author.github_username }}">GitHub</a> · <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}">LinkedIn</a> · <a href="mailto:{{ site.author.email }}">Email</a></span>
+    <span>© {{ 'now' | date: '%Y' }} Eissa Soubhi</span>
+    <span>Senior Full-Stack Engineer · Tech Lead</span>
   </div>
 </footer>
